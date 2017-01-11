@@ -1,0 +1,398 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="styles/jquery.formstyler.css">
+        <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css'>
+        <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css'>
+        <link rel="stylesheet" href="styles/PGW.jquery.css">
+        <link rel="stylesheet" href="styles/slick.css">
+        <link rel="stylesheet" href="styles/slick-theme.css">
+        <title>Document</title>
+    </head>
+    
+    <body>
+    <header>
+        <div class="wrapper">
+        	<div class="logo">
+        		<a href="#"><img src="./image/logo.png" alt="logotip"></a>
+        	</div>
+        	<ul class="menu">
+    		    <li></li>
+    		    <li></li>
+    		    <li></li>
+    		</ul>
+        	<nav>
+        		<ul>
+        			<li><a href="car_tile.html">Автомобили</a></li>
+        			<li><a href="tyres.html">Шины и диски</a></li>
+        			<li><a href="parts.html">Запчасти</a></li>
+                    <li>
+                        <div class="registration registration2">
+                            <a class="btn_out" href="enter.html">Вход</a>
+                            <a href="registration.html">Регистрация</a>
+                        </div>  
+                    </li>
+                </ul>
+        	</nav>
+            <div class="block_buy">
+            	<div class="block_rating">
+            		<span class="rating">3</span>
+            	</div>	
+            	<a href="form_advertisement.html" class="btn_buy">Продать</a>
+            </div>
+        	<div class="registration">
+        		<a class="btn_out" href="enter.html">Вход</a>
+        		<a href="registration.html">Регистрация</a>
+        	</div>
+        </div>
+    </header>
+    <div class="clearfix"></div>
+    <div class="wrapper">
+        <div class="title_form">
+            <h2>Добавить объявление</h2>
+        </div>
+        <div class="tabs_btn">
+            <div class="btn_radio">
+                <a class="current" href="#content1">Автомобили</a>
+                <a href="#content2">Шины и диски</a>
+                <a href="#content3">Запчасти</a>
+                <div class="clearfix"></div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="tabs_container tabs_container">
+            <section class="content_tab content_tab1" id="content1" style="display: block">
+                <label for="cat"><b class="red">*</b>Выберите автомобиль:</label>
+                <select name="cat" id="cat">
+                    <option selected>Выберите марку:</option>
+                    <option value="2">Шины</option>
+                    <option value="3">Запчасти</option>
+                </select>
+                <select  >
+                    <option selected>Выберите модель:</option>
+                    <option value="2">Шины</option>
+                    <option value="3">Запчасти</option>
+                </select>
+                <select  >
+                    <option selected>Поколение:</option>
+                    <option value="2">Шины</option>
+                    <option value="3">Запчасти</option>
+                </select>
+                <div class="clearfix"></div>
+                <label class="car_har_title" for="text"><b class="red">*</b>Характеристики:</label>
+                <input class="car_har car_har1" type="text" id="text" placeholder="Пробег (км)">
+                <input class="car_har" type="text"  placeholder="Год выпуска">
+                <select class="car_har_select"  >
+                    <option selected>Тип двигателя:</option>
+                    <option value="2">Шины</option>
+                    <option value="3">Запчасти</option>
+                </select>
+                <select class="car_har_select" >
+                    <option selected>Тип кузова:</option>
+                    <option value="2">Шины</option>
+                    <option value="3">Запчасти</option>
+                </select>
+                <div class="clearfix"></div>
+                <div class="file_block">
+                    <label>Фотографии (объявление с фото просматривает в 5 раз больше!):</label>
+                    <label class="file" for="file">Добавьте выбранную фотографию в эту область или <span>нажмите здесь</span> для выбора с компьютера</label>
+                    <input id="file" type="file">
+                </div>
+                    <label><b class="red">*</b> Тип продажи:</label>
+                <div class="region">
+                    <div class="region_btns">
+                        <a class="region_btn1 active" href="#">Обычные объявления</a>
+                        <a class="region_btn2" href="#">Аукционы</a>
+                    </div>
+                    <p>Подразумевает обычную продажу с указанием конечной стоимости.</p>
+                    <input class="car_har car_har4" type="text"  placeholder="Цена (руб)">
+                        <input type="radio" name="contact">
+                    <label for="contact">Цена по договоренности
+                    </label>
+                </div>
+                <div class="decription_car">
+                    <label>Описание (укажите дополнительную информацию, необязательно):</label>
+                    <textarea>Отличный автомобиль. Перекупщиков просьба не беспокоить!!!</textarea>
+                </div>
+                <div class="region_block">
+                    <label><b class="red">*</b>Регион продажи:</label>
+                    <select>
+                        <option selected value="1">Выберите область</option>
+                        <option value="2">222</option>
+                        <option value="3">333</option>
+                    </select>
+                    <select >
+                        <option selected value="1">Выберите город</option>
+                        <option value="2">Новый</option>
+                        <option value="3">Б/У</option>
+                    </select>
+                    <input type="text" id="address" placeholder="Адрес (необязательно)">
+                    <div class="clearfix"></div>
+                </div>
+                <label><b class="red">*</b>Укажите контактные данные:</label>
+                <div class="compani">
+                    <a href="#">Частно лицо</a>
+                    <a href="#">Компания  /  Магазин</a><br>
+                    <input class="adress" type="text" id="name" placeholder="Как к вам обращаться?">
+                    <div class="clearfix"></div>
+                    <input class="tel" type="tel" placeholder="+7 (___) ___  __  __">
+                    <input type="submit" value="Подтвердить">
+                    <input type="email" placeholder="Адрес электронной почты:">
+                </div>
+                <div class="adding">
+                    <a class="btn_add" href="#">Добавить бесплатно</a><br>
+                    <a class="add_off" href="#">Отменить размещение и вернуться к списку объявлений</a>
+                </div>
+            </section>
+            <section class="content_tab content_tab2" id="content2">
+                <label for="cat"><b class="red">*</b>Выберите категорию</label>
+                <select name="cat" id="cat">
+                    <option selected value="1">Диски</option>
+                    <option value="2">Шины</option>
+                    <option value="3">Запчасти</option>
+                </select>
+                <div class="clearfix"></div>
+                <label for="text"><b class="red">*</b>Укажите название:</label>
+                <input type="text" id="text" placeholder="Необходимо добавить название к Вашему объявлению (не используйте слово 'продам', а также контактные данные)">
+                <label><b class="red">*</b>Укажите основные параметры:</label>
+                <div class="parametric">
+                    <select name="mark" id="mark">
+                        <option selected value="1">Марка дисков</option>
+                        <option value="2">222</option>
+                        <option value="3">333</option>
+                    </select>
+                    <select name="type" id="type">
+                        <option selected value="1">Тип диска</option>
+                        <option value="2">222</option>
+                        <option value="3">333</option>
+                    </select>
+                    <select name="diameter" id="diameter">
+                        <option selected value="1">Диаметр диска</option>
+                        <option value="2">222</option>
+                        <option value="3">333</option>
+                    </select>
+                    <div class="clearfix"></div>
+                    <select name="sver" id="sver">
+                        <option selected value="1">сверловка</option>
+                        <option value="2">222</option>
+                        <option value="3">333</option>
+                    </select>
+                    <select name="status" id="status">
+                        <option selected value="1">Состояние</option>
+                        <option value="2">Новый</option>
+                        <option value="3">Б/У</option>
+                    </select>
+                </div>
+                <div class="clearfix"></div>
+                <div class="file_block">
+                    <label>Фотографии (объявление с фото просматривает в 5 раз больше!):</label>
+                    <label class="file" for="file">Добавьте выбранную фотографию в эту область или <span>нажмите здесь</span> для выбора с компьютера</label>
+                    <input id="file" type="file">
+                </div>
+            
+                <label><b class="red">*</b> Тип продажи:</label>
+                <div class="region">
+                    <div class="region_btns">
+                        <a class="region_btn1 active" href="#">Обычные объявления</a>
+                        <a class="region_btn2" href="#">Аукционы</a>
+                    </div>
+                    <p>Подразумевает обычную продажу с указанием конечной стоимости.</p>
+                    <input class="car_har car_har4" type="text"  placeholder="Цена (руб)">
+                        <input type="radio" name="contact">
+                    <label for="contact">Цена по договоренности
+                    </label>
+                </div>
+                <div class="decription_car">
+                    <label>Описание (укажите дополнительную информацию, необязательно):</label>
+                    <textarea>Отличный автомобиль. Перекупщиков просьба не беспокоить!!!</textarea>
+                </div>
+                <div class="region_block">
+                    <label><b class="red">*</b>Регион продажи:</label>
+                    <select name="region" id="region">
+                        <option selected value="1">Выберите область</option>
+                        <option value="2">222</option>
+                        <option value="3">333</option>
+                    </select>
+                    <select name="city" id="city">
+                        <option selected value="1">Выберите город</option>
+                        <option value="2">Новый</option>
+                        <option value="3">Б/У</option>
+                    </select>
+                    <input type="text" id="address" placeholder="Адрес (необязательно)">
+                    <div class="clearfix"></div>
+                </div>
+                <label><b class="red">*</b>Укажите контактные данные:</label>
+                <div class="compani">
+                    <a href="#">Частно лицо</a>
+                    <a href="#">Компания  /  Магазин</a><br>
+                    <input class="adress" type="text" id="name" placeholder="Как к вам обращаться?">
+                    <div class="clearfix"></div>
+                    <input class="tel" type="tel" placeholder="+7 (___) ___  __  __">
+                    <input type="submit" value="Подтвердить">
+                    <input type="email" placeholder="Адрес электронной почты:">
+                </div>
+                <div class="adding">
+                    <a class="btn_add" href="#">Добавить бесплатно</a><br>
+                    <a class="add_off" href="#">Отменить размещение и вернуться к списку объявлений</a>
+                </div>
+            </section>
+            <section class="content_tab content_tab3" id="content3">
+                <div class="clearfix"></div>
+                <label for="text"><b class="red">*</b>Укажите название:</label>
+                <input type="text" id="text" placeholder="Необходимо добавить название к Вашему объявлению (не используйте слово 'продам', а также контактные данные)">
+                 <label for="cat"><b class="red">*</b>Выберите транспортное средство, к которому предназначена запчасть:</label>
+                <select >
+                    <option selected>Выберите марку:</option>
+                    <option value="2">Шины</option>
+                    <option value="3">Запчасти</option>
+                </select>
+                <select  >
+                    <option selected>Выберите модель:</option>
+                    <option value="2">Шины</option>
+                    <option value="3">Запчасти</option>
+                </select>
+                <select  >
+                    <option selected>Поколение:</option>
+                    <option value="2">Шины</option>
+                    <option value="3">Запчасти</option>
+                </select>
+                <div class="clearfix"></div>
+                <a class="add_else" href="#">Добавить еще</a>
+                  <label class="car_har_title car_har_title2" for="text"><b class="red">*</b>Характеристики:</label>
+
+                <select >
+                    <option selected>Тип запчасти:</option>
+                    <option value="2">Шины</option>
+                    <option value="3">Запчасти</option>
+                </select>
+                <select  >
+                    <option selected>Категория запчастей:</option>
+                    <option value="2">Шины</option>
+                    <option value="3">Запчасти</option>
+                </select>
+                <select  >
+                    <option selected>Выберите состояние:</option>
+                    <option value="2">Шины</option>
+                    <option value="3">Запчасти</option>
+                </select>
+                <div class="file_block">
+                    <label>Фотографии (объявление с фото просматривает в 5 раз больше!):</label>
+                    <label class="file" for="file">Добавьте выбранную фотографию в эту область или <span>нажмите здесь</span> для выбора с компьютера</label>
+                    <input id="file" type="file">
+                </div>
+            
+                <label><b class="red">*</b> Тип продажи:</label>
+                <div class="region">
+                    <div class="region_btns">
+                        <a class="region_btn1 active" href="#">Обычные объявления</a>
+                        <a class="region_btn2" href="#">Аукционы</a>
+                    </div>
+                    <p>Подразумевает обычную продажу с указанием конечной стоимости.</p>
+                    <input class="car_har car_har4" type="text"  placeholder="Цена (руб)">
+                        <input type="radio" name="contact">
+                    <label for="contact">Цена по договоренности</label>
+                </div>
+                <div class="decription_car">
+                    <label>Описание (укажите дополнительную информацию, необязательно):</label>
+                    <textarea>Отличный автомобиль. Перекупщиков просьба не беспокоить!!!</textarea>
+                </div>
+                <div class="region_block">
+                    <label><b class="red">*</b>Регион продажи:</label>
+                    <select>
+                        <option selected value="1">Выберите область</option>
+                        <option value="2">222</option>
+                        <option value="3">333</option>
+                    </select>
+                    <select>
+                        <option selected value="1">Выберите город</option>
+                        <option value="2">Новый</option>
+                        <option value="3">Б/У</option>
+                    </select>
+                    <input type="text" id="address" placeholder="Адрес (необязательно)">
+                    <div class="clearfix"></div>
+                </div>
+                <label><b class="red">*</b>Укажите контактные данные:</label>
+                <div class="compani">
+                    <a href="#">Частно лицо</a>
+                    <a href="#">Компания  /  Магазин</a><br>
+                    <input class="adress" type="text" id="name" placeholder="Как к вам обращаться?">
+                    <div class="clearfix"></div>
+                    <input class="tel" type="tel" placeholder="+7 (___) ___  __  __">
+                    <input type="submit" value="Подтвердить">
+                    <input type="email" placeholder="Адрес электронной почты:">
+                </div>
+                <div class="adding">
+                    <a class="btn_add" href="#">Добавить бесплатно</a><br>
+                    <a class="add_off" href="#">Отменить размещение и вернуться к списку объявлений</a>
+                </div>
+            </section>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+    <footer id="footer">
+    	<div class="wrapper">
+    		<div class="footer_menu">
+    			<ul >
+    				<li class="top_list">Категории</li>
+    				<li><a href="#">Автомобили</a></li>
+    				<li><a href="#">Шины и диски</a></li>
+    				<li><a href="#">Запчасти</a></li>
+    			</ul>
+    			<ul class="list2">
+    				<li class="top_list">Полезная информация</li>
+    				<li><a href="#">Как это устроено?</a></li>
+    				<li><a href="#">Участие в аукционах</a></li>
+    				<li><a href="#">Размещение объявлений</a></li>
+    				<li><a href="#">Размещение лота</a></li>
+    				<li><a href="#">FAQ</a></li>
+    			</ul>
+    			<ul class="list2 ">
+    				<li class="top_list">Сотрудничество</li>
+    				<li><a href="#">Размещение рекламы</a></li>
+    				<li><a href="#">Для партнеров</a></li>
+    			</ul>
+    			<ul class="list2 ">
+    				<li class="top_list">Trade Car</li>
+    				<li><a href="#">Информация о нас</a></li>
+    				<li><a href="#">Форма обратной связи</a></li>
+    				<li><a href="#">Сообщить об ошибке</a></li>
+    				<li><a href="#">Контакты</a></li>
+    			</ul>
+    		</div>
+    		<div class="footer_block">
+    			<div class="footer_title">
+    				<h4>Есть вопросы?</h4>
+    				<p>Звоните! <span>+7 (495) 344-05-48</span></p>
+    				<p>или пишите: <span class="mail">info@tradecar.ru</span></p>
+    				<a href="#"><img src="./image/logo.png" alt="logo"></a>
+    				<p class="pravo">© Все права защищены   ООО “Автопила”, 2016</p>
+    			</div>
+    		</div>
+    		<div class="footer_mobi">
+    			<h4>+7 (495) 344-05-48</h4>
+    			<a href="#">Сообщить об ошибке</a>
+    			<a href="#">Задать вопрос</a>
+    			<a href="#">Полная версия</a>
+    			<a class="mobi_logo" href="#"><img src="./image/logo.png" alt="logotip"></a>
+    			<p class="pravo">© Все права защищены   ООО “Автопила”, 2016</p>
+    		</div>
+    	</div>
+    </footer>
+    
+        <script src="script/jquery-2.2.3.min.js"></script>
+        <script src="script/main.js"></script>
+        <script src="script/jquery.formstyler.min.js"></script>
+        <script src="script/slick.min.js"></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js'></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js'></script>
+        <script src='script/swipe.js'></script>
+        <script src="script/PGW.jquery.js"></script>
+    </body>
+    
+    </html>
