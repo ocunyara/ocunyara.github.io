@@ -6,7 +6,7 @@ body {
   background-color: #FFFFFF;
   height: 100%;
   position: relative;
-  font-size: 13px !important;
+  font-size: 1px !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
@@ -282,8 +282,8 @@ header {
 nav {
   float: right; }
   nav li {
-    line-height: 90px;
-    margin: 0 20px 0 25px;
+    line-height: 98px;
+    margin: 0 18px -9px 30px;
     list-style: none;
     display: inline-block;
     *display: inline;
@@ -308,22 +308,24 @@ nav {
   background-size: 100%; }
 
 .main_title {
-  padding-top: 90px; }
+  padding-top: 77px; }
   .main_title h1 {
     font-family: ProximaNova-Extrabld;
     font-size: 48px;
+    line-height: 72px;
     color: #000; }
 
 .form_request {
   display: table;
-  margin: 250px auto 115px auto; }
+  margin: 221px auto 110px auto; }
 
 .title_request {
   text-align: center;
-  margin-bottom: 30px; }
+  margin-bottom: 18px; }
   .title_request h3 {
     font-family: ProximaNova-Semibold;
-    font-size: 30px;
+    font-size: 31px;
+    line-height: 45px;
     color: #fff; }
 
 .form_input {
@@ -335,14 +337,15 @@ nav {
   font-family: ProximaNova-Semibold;
   font-size: 18px;
   color: #999;
-  margin: 0 15px; }
+  margin: 0 30px 0 0px; }
 
 .form_submit {
   width: 270px;
   height: 52px;
-  margin-left: 15px;
+  margin-left: 0px;
   font-family: ProximaNova-Bold;
   font-size: 20px;
+  text-transform: uppercase;
   color: #000;
   border: 0;
   border-radius: 30px;
@@ -350,11 +353,11 @@ nav {
   box-shadow: 0px 0px 32px -6px rgba(0, 0, 0, 0.75); }
 
 .slider_products {
-  margin: 0 25px -25px 25px; }
+  margin: 0 0px -49px 22px; }
   .slider_products .text_box {
-    width: 41.88%;
+    width: 44%;
     float: left;
-    margin: 40px 0 85px 25px;
+    margin: 40px 0 85px 8px;
     position: relative; }
     .slider_products .text_box:after {
       content: '';
@@ -366,14 +369,15 @@ nav {
       height: 2px;
       background: #fff; }
   .slider_products .board {
-    width: 41.88%;
+    width: 51%;
     height: 362px;
-    margin-top: 60px;
+    margin-top: 9px;
     padding: 13px 0;
     float: right;
     border: 2px solid #fff;
     box-sizing: border-box;
     background: url(../image/board.jpg);
+    background-size: cover;
     background-repeat: no-repeat; }
     .slider_products .board .right_element {
       float: right;
@@ -395,8 +399,8 @@ nav {
     font-size: 16px;
     color: #fff; }
   .slider_products .slick-next {
-    right: -7px;
-    top: 100%; }
+    right: 27px;
+    top: 101%; }
     .slider_products .slick-next:after {
       content: '';
       display: block;
@@ -412,13 +416,13 @@ nav {
       content: 'вперед';
       position: absolute;
       top: 8px;
-      left: -60px;
+      left: -69px;
       font-family: ProximaNova-Regular;
-      font-size: 13px;
+      font-size: 15px;
       color: #fff; }
   .slider_products .slick-prev {
-    left: 20px;
-    top: 100%; }
+    left: 7px;
+    top: 101%; }
     .slider_products .slick-prev:after {
       content: '';
       display: block;
@@ -432,22 +436,24 @@ nav {
       content: 'назад';
       position: absolute;
       top: 8px;
-      left: 34px;
+      left: 38px;
       font-family: ProximaNova-Regular;
-      font-size: 13px;
+      font-size: 15px;
       color: #fff; }
 
 .btn_download {
   line-height: 50px;
   height: 50px;
-  margin: 10px auto 240px;
+  margin: 36px auto 247px;
   display: block;
   text-align: center; }
 
-.title_products h2 {
-  font-family: ProximaNova-Semibold;
-  font-size: 50px;
-  color: #fff; }
+.title_products {
+  margin-bottom: 47px; }
+  .title_products h2 {
+    font-family: ProximaNova-Semibold;
+    font-size: 52px;
+    color: #fff; }
 
 .title_slider {
   margin-bottom: 54px;
@@ -475,16 +481,16 @@ nav {
     background: #fff; }
 
 .title_advantegas h2 {
-  margin-bottom: 90px;
+  margin-bottom: 93px;
   text-align: center;
   font-family: ProximaNova-Semibold;
-  font-size: 50px;
+  font-size: 52px;
   color: #000; }
 
 .advantages_box {
   width: 100%; }
   .advantages_box ul {
-    padding: 100px 45px 30px 45px;
+    padding: 131px 0px 28px 0px;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: distribute;
@@ -508,6 +514,11 @@ nav {
       position: absolute;
       top: -75px;
       left: 55px; }
+    .advantages_box li p {
+      font-family: ProximaNova-Bold;
+      font-size: 24px;
+      line-height: 27px;
+      color: #000; }
   .advantages_box .list-2:after {
     background-position: -56px 0; }
   .advantages_box .list-3:after {
@@ -519,7 +530,7 @@ nav {
     background-position: -227px 0; }
 
 .title_reviews {
-  margin-top: 100px; }
+  margin-top: 95px; }
 
 .slider_reviews {
   margin: 0 100px; }
@@ -533,8 +544,8 @@ nav {
     border: 2px solid #0377ba;
     border-radius: 50%; }
   .slider_reviews .text_box {
-    padding-top: 20px;
-    width: 85%;
+    padding-top: 39px;
+    width: 100%;
     position: relative; }
     .slider_reviews .text_box:after {
       content: '';
@@ -552,7 +563,7 @@ nav {
     color: #000; }
   .slider_reviews span {
     display: inline-block;
-    padding: 35px 0;
+    padding: 27px 0;
     color: #0377ba;
     font-family: ProximaNova-Bold;
     font-size: 16px; }
@@ -574,24 +585,24 @@ nav {
     margin: 0 70px;
     background: #0377ba; }
   .form_application .promo_text {
-    margin-top: 90px;
-    margin-bottom: 30px;
+    margin-top: 119px;
+    margin-bottom: 26px;
     font-family: ProximaNova-Bold;
     font-size: 24px;
     color: #232323; }
   .form_application .title_aplcation {
-    margin-bottom: 50px; }
+    margin-bottom: 47px; }
     .form_application .title_aplcation h2 {
       font-family: ProximaNova-Semibold;
-      font-size: 48px;
+      font-size: 49px;
       color: #0377ba; }
 
 .contacts {
   position: relative;
-  padding-bottom: 100px;
-  background: linear-gradient(170deg, #fff 42%, #0377ba 39%); }
+  padding-bottom: 95px;
+  background: linear-gradient(171.7deg, #fff 29%, #0377ba 29%); }
   .contacts ul {
-    padding: 100px 40px 30px 40px;
+    padding: 142px 0px 30px 0px;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: distribute;
@@ -623,6 +634,7 @@ nav {
     .contacts li p {
       font-family: ProximaNova-Regular;
       font-size: 18px;
+      line-height: 27px;
       color: #000; }
   .contacts .list-2:after {
     width: 49px;
@@ -640,11 +652,11 @@ nav {
 
 .title_contacts {
   text-align: center;
-  margin-top: 105px;
-  margin-bottom: 95px; }
+  margin-top: 93px;
+  margin-bottom: 83px; }
   .title_contacts h2 {
     font-family: ProximaNova-Semibold;
-    font-size: 50px;
+    font-size: 52px;
     color: #000; }
 
 footer {
@@ -673,12 +685,11 @@ footer {
   border-left: 1px solid #0377ba;
   box-sizing: border-box; }
   .form_question .form_input {
-    height: 50px;
-    width: 250px;
+    width: 47%;
     float: left;
     margin-bottom: 10px;
     margin-left: 0;
-    margin-right: 23px; }
+    margin-right: 27px; }
   .form_question .form_submit {
     display: block;
     margin: 0 auto 18px; }
@@ -720,22 +731,208 @@ footer {
   font-size: 18px;
   color: #fff; }
 
+@media screen and (max-width: 1170px) {
+  .wrapper {
+    padding: 0 20px; }
+  .form_question .form_submit {
+    margin: 0 auto 14px; }
+  .form_request {
+    margin: 90px auto 45px auto; }
+  .slider_products .slick-prev {
+    top: 95%; }
+  .slider_products .slick-next {
+    top: 95%; }
+  .btn_download {
+    margin: 36px auto 140px; } }
+
+@media screen and (max-width: 1117px) {
+  .wrapper {
+    padding: 0 20px;
+    overflow: hidden; }
+  .main_title h1 {
+    font-size: 46px;
+    line-height: 55px; }
+  .btn_download {
+    margin: 36px auto 35px; }
+  .title_advantegas h2 {
+    margin-bottom: 50px; }
+  .advantages_box ul {
+    padding: 110px 0px 25px 0px; }
+  .title_reviews {
+    margin-top: 50px; }
+  .slider_reviews {
+    margin: 0; }
+  .title_slider {
+    margin-bottom: 35px; }
+  .form_application .promo_text {
+    margin-top: 50px; }
+  .slider_products {
+    margin: 0; }
+  .form_input {
+    width: 240px;
+    margin: 0 10px 0 0px; }
+  .title_contacts {
+    margin-top: 50px; }
+  .contacts ul {
+    padding: 100px 0px 25px 0px; }
+  .contacts {
+    padding-bottom: 50px; }
+  .title_question {
+    margin-bottom: 50px; }
+  .slider_products p {
+    line-height: 21px; }
+  .map {
+    height: 470px; }
+  .form_input {
+    height: 45px; }
+  .form_textarea {
+    height: 150px; }
+  .form_question .form_input {
+    margin-right: 10px; } }
+
+@media screen and (max-width: 992px) {
+  nav a {
+    font-size: 14px; }
+  nav li {
+    line-height: 90px;
+    margin: 0 8px -9px 15px; }
+  .main_title {
+    padding-top: 30px; }
+  .main_title h1 {
+    font-size: 36px;
+    line-height: 46px; }
+  .title_request h3 {
+    font-size: 30px;
+    line-height: 35px; }
+  .form_input {
+    width: 220px; }
+  .form_submit {
+    width: 240px;
+    height: 40px;
+    font-size: 18px; }
+  .title_products h2 {
+    font-size: 45px; }
+  .title_products {
+    margin-bottom: 10px; }
+  .slider_products .text_box {
+    width: 50%;
+    margin: 10px 0 40px 8px; }
+  .title_slider {
+    margin-bottom: 0px; }
+  .title_slider:before {
+    display: none; }
+  .slider_products .text_box:after {
+    display: none; }
+  .slider_products .board {
+    width: 48%;
+    height: 250px; }
+  .slider_products .board .block_element {
+    width: 63px;
+    height: 63px; }
+  .btn_download {
+    margin: 18px auto 32px;
+    line-height: 40px; }
+  .title_advantegas h2 {
+    font-size: 40px; }
+  .advantages_box li p {
+    font-size: 15px;
+    line-height: 18px; }
+  .slider_reviews .text_box {
+    padding-top: 0px; }
+  .slider_reviews p {
+    font-size: 16px; }
+  .form_application .title_aplcation h2 {
+    font-size: 40px; }
+  .form_application form {
+    margin: 0; }
+  .title_contacts h2 {
+    font-size: 40px; }
+  .title_contacts {
+    margin-top: 30px;
+    margin-bottom: 40px; }
+  .slider_reviews .avatar {
+    margin-right: 35px; }
+  .contacts li p {
+    font-size: 16px; }
+  .contacts li:after {
+    left: 75px; }
+  .contacts .list-2:after {
+    left: 65px; }
+  .contacts .list-3:after {
+    left: 70px; }
+  .contacts .list-4:after {
+    left: 58px; }
+  .title_products {
+    margin-bottom: 40px; }
+  .map {
+    height: 350px; }
+  .form_question .form_input {
+    width: 100%;
+    margin: 0 0 10px 0; }
+  .form_question {
+    padding: 10px; }
+  .form_textarea {
+    margin-bottom: 15px; }
+  .form_textarea {
+    height: 96px; } }
+
+@media screen and (max-width: 768px) and (min-width: 320px) {
+  .slider_reviews .avatar {
+    margin: 0 auto 20px;
+    float: none; }
+  .form_application .promo_text {
+    margin-bottom: 10px;
+    font-size: 18px; }
+  .form_application .title_aplcation {
+    margin-bottom: 25px; }
+  .form_application .title_aplcation h2 {
+    font-size: 32px; }
+  .form_input {
+    width: 90%;
+    margin: 0 auto 10px; }
+  .title_contacts h2 {
+    font-size: 32px; }
+  .contacts {
+    margin-bottom: 20px; }
+    .contacts ul {
+      display: block;
+      padding: 20px 0px 20px 0px; }
+    .contacts li {
+      margin-top: 21%;
+      display: inline-block;
+      width: 50%;
+      font-size: 14px;
+      list-style: 15px; }
+  .title_products {
+    margin-bottom: 20px; }
+  .contacts {
+    padding-bottom: 30px; }
+  .title_products h2 {
+    font-size: 35px; }
+  .map {
+    display: none; }
+  .form_question {
+    width: 100%; } }
+
 @media screen and (max-width: 600px) {
   nav {
     position: relative;
     min-height: 40px; }
+    nav:after {
+      content: '☰';
+      position: absolute;
+      display: block;
+      right: -10px;
+      top: 25px;
+      font-size: 30px;
+      cursor: pointer;
+      z-index: 1000; }
   nav ul {
-    width: 180px;
-    padding: 5px 0;
-    position: absolute;
-    top: 0;
-    left: 0;
-    border: solid 1px #aaa;
-    background: #FAFAFA url(images/icon-menu.png) no-repeat 10px 11px;
-    border-radius: 5px;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3); }
+    width: 100%;
+    margin-right: 50px;
+    padding: 22px 0px 10px 0px; }
   nav li {
-    display: none;
+    display: block;
     /* скрыть все <li> пункты */
     margin: 0; }
   nav .current {
@@ -749,18 +946,16 @@ footer {
     background: none;
     color: #666; }
   /* при наведении на пункты меню */
-  nav ul:hover {
-    background-image: none; }
-  nav ul:hover li {
-    display: block;
-    margin: 0 0 5px; }
+  /*	nav ul:hover {
+		background-image: none;
+	}
+	nav ul:hover li {
+		display: block;
+		margin: 0 0 5px;
+	}*/
   nav ul:hover .current {
     background: url(images/icon-check.png) no-repeat 10px 7px; }
-  /* адаптивное меню справа */
-  nav.right ul {
-    left: auto;
-    right: 0; }
-  /* адаптивное меню по центру */
-  nav.center ul {
-    left: 50%;
-    margin-left: -90px; } }
+  .logo {
+    display: inline-block;
+    margin-top: 15px;
+    margin-bottom: 15px; } }
