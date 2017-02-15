@@ -56,6 +56,7 @@ $(document).ready(function() {
     }) 
 
 
+
     $("nav").on("click", "a", function(event) {
         event.preventDefault();
         var id = $(this).attr('href'),
@@ -63,12 +64,10 @@ $(document).ready(function() {
         $('body,html').animate({ scrollTop: top }, 1000);
     });
 
-    $('nav:after').toggle( function() {
-        $( "nav ul"  ).show( );
-      }, function() {
-        $( "nav ul"  ).hide(  );
-  });
 
+    $('nav').click(function(){
+        $('nav ul').toggle();
+    });
 
 
       function initialize() {

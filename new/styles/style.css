@@ -351,6 +351,10 @@ nav {
   border-radius: 30px;
   background: #f0ec34;
   box-shadow: 0px 0px 32px -6px rgba(0, 0, 0, 0.75); }
+  .form_submit:hover {
+    transition: all 0.2s linear;
+    background: #5292c6;
+    color: #fff; }
 
 .slider_products {
   margin: 0 0px -49px 22px; }
@@ -692,7 +696,7 @@ footer {
     margin-right: 27px; }
   .form_question .form_submit {
     display: block;
-    margin: 0 auto 18px; }
+    margin: 0 auto 14px; }
   .form_question .form_email {
     display: block;
     width: 100%;
@@ -782,7 +786,7 @@ footer {
   .slider_products p {
     line-height: 21px; }
   .map {
-    height: 470px; }
+    height: 436px; }
   .form_input {
     height: 45px; }
   .form_textarea {
@@ -833,7 +837,8 @@ footer {
     margin: 18px auto 32px;
     line-height: 40px; }
   .title_advantegas h2 {
-    font-size: 40px; }
+    font-size: 40px;
+    margin-top: 25px; }
   .advantages_box li p {
     font-size: 15px;
     line-height: 18px; }
@@ -855,13 +860,13 @@ footer {
   .contacts li p {
     font-size: 16px; }
   .contacts li:after {
-    left: 75px; }
+    left: 43%; }
   .contacts .list-2:after {
-    left: 65px; }
+    left: 43%; }
   .contacts .list-3:after {
-    left: 70px; }
+    left: 43%; }
   .contacts .list-4:after {
-    left: 58px; }
+    left: 42%; }
   .title_products {
     margin-bottom: 40px; }
   .map {
@@ -874,9 +879,55 @@ footer {
   .form_textarea {
     margin-bottom: 15px; }
   .form_textarea {
-    height: 96px; } }
+    height: 96px; }
+  .contacts {
+    background: linear-gradient(171.7deg, #fff 50%, #0377ba 29%); }
+  .slider_reviews .text_box:after {
+    display: none; } }
 
 @media screen and (max-width: 768px) and (min-width: 320px) {
+  .form_application form {
+    padding: 35px 10px; }
+  .form_submit {
+    margin: 0 auto;
+    display: block; }
+  .main_title h1 {
+    font-size: 30px;
+    line-height: 40px; }
+  .title_request h3 {
+    font-size: 25px;
+    line-height: 30px; }
+  .wrapper {
+    padding: 0 10px; }
+  .form_request {
+    margin: 35px auto 30px auto; }
+  .main_body {
+    background: #0377ba; }
+  .slider_products {
+    /*background: #0377ba;*/ }
+    .slider_products .text_box {
+      width: 100%;
+      margin-bottom: 25px;
+      float: none; }
+    .slider_products .board {
+      width: 96%;
+      margin: 0 auto 50px;
+      float: none; }
+    .slider_products p {
+      line-height: 16px;
+      font-size: 14px; }
+  .title_advantegas h2 {
+    font-size: 30px; }
+  .advantages_box ul {
+    display: block;
+    padding-top: 10px; }
+  .advantages_box li {
+    display: inline-block;
+    width: 50%;
+    margin-top: 85px;
+    padding: 0 5px; }
+    .advantages_box li:after {
+      left: 39%; }
   .slider_reviews .avatar {
     margin: 0 auto 20px;
     float: none; }
@@ -888,7 +939,7 @@ footer {
   .form_application .title_aplcation h2 {
     font-size: 32px; }
   .form_input {
-    width: 90%;
+    width: 100%;
     margin: 0 auto 10px; }
   .title_contacts h2 {
     font-size: 32px; }
@@ -912,7 +963,9 @@ footer {
   .map {
     display: none; }
   .form_question {
-    width: 100%; } }
+    width: 100%; }
+  .title_advantegas h2 {
+    margin-bottom: 25px; } }
 
 @media screen and (max-width: 600px) {
   nav {
@@ -928,6 +981,7 @@ footer {
       cursor: pointer;
       z-index: 1000; }
   nav ul {
+    display: none;
     width: 100%;
     margin-right: 50px;
     padding: 22px 0px 10px 0px; }

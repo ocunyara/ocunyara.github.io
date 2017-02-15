@@ -174,6 +174,7 @@
 .slick-dots li button:focus:before
 {
     opacity: 1;
+     outline: none;
 }
 .slick-dots li button:before
 {
@@ -185,7 +186,7 @@
     top: 0;
     left: 0;
 
-    width: 20px;
+    width: 20px; outline: none;
     height: 20px;
 
     content: '•';
