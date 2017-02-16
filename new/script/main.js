@@ -83,7 +83,12 @@ $(document).ready(function() {
         } else {
             nav.removeClass("f-nav");
         }
+        if (window.matchMedia('(max-width: 600px)').matches) {
+            nav.removeClass("f-nav");
+        }
     });
+
+
       $(window).resize(ravenous);
       // Call the function
       ravenous(); 
