@@ -403,14 +403,19 @@ nav {
     padding: 13px 0;
     overflow: hidden;
     float: right;
-    border: 2px solid #fff;
+    /*		border: 2px solid #fff;*/
     box-sizing: border-box;
-    background: url(../image/board.jpg);
+    /*		background: url(../image/board.jpg);*/
     background-size: cover;
     background-repeat: no-repeat; }
     .slider_products .board .right_element {
-      float: right;
       margin-right: 20px; }
+      .slider_products .board .right_element li {
+        text-align: left;
+        line-height: 30px;
+        font-family: ProximaNova-Regular;
+        font-size: 18px;
+        color: #fff; }
     .slider_products .board .block_element {
       width: 100px;
       height: 100px;
