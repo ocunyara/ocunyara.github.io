@@ -401,6 +401,7 @@ nav {
     height: 362px;
     margin-top: 9px;
     padding: 13px 0;
+    overflow: hidden;
     float: right;
     border: 2px solid #fff;
     box-sizing: border-box;
@@ -413,8 +414,8 @@ nav {
     .slider_products .board .block_element {
       width: 100px;
       height: 100px;
-      display: -webkit-box;
-      margin: 7px 0 7px 0;
+      float: right;
+      margin: 7px 3px;
       background: #666; }
   .slider_products h5 {
     line-height: 34px;
