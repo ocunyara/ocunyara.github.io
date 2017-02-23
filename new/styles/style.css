@@ -408,6 +408,9 @@ nav {
     /*		background: url(../image/board.jpg);*/
     background-size: cover;
     background-repeat: no-repeat; }
+    .slider_products .board img {
+      width: 50%;
+      float: left; }
     .slider_products .board .right_element {
       margin-right: 20px; }
       .slider_products .board .right_element li {
