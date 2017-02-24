@@ -1,13 +1,18 @@
-<?php
-
-$recepient = "smolin_an@mail.ua";
-$sitename = "https://ocunyara.github.io/new/";
-
-$name = trim($_POST["name"]);
-$phone = trim($_POST["phone"]);
-$message = "Имя: $name \nТелефон: $phone";
-
-$pagetitle = "Новая заявка с сайта \"$sitename\"";
-mail($recepient, $pagetitle, $message, "Content-type: text/plain; charset=\"utf-8\"\n From: $recepient");
-
+<?
+if((isset($_POST['name'])&&$_POST['name']!="")&&(isset($_POST['phone'])&&$_POST['phone']!="")){ //Проверка отправилось ли наше поля name и не пустые ли они
+        $to = 'smolin_an@mail.ua'; //Почта получателя, через запятую можно указать сколько угодно адресов
+        $subject = 'Обратный звонок'; //Загаловок сообщения
+        $message = '
+                <html>
+                    <head>
+                        <title>'.$subject.'</title>
+                    </head>
+                    <body>
+                        <p>Имя: '.$_POST['name'].'</p>
+                        <p>Телефон: '.$_POST['phone'].'</p>                        
+                    </body>
+                </html>'; //Текст нащего сообщения можно использовать HTML теги
+        $headers  = "Content-type: text/html; charset=utf-8 \r\n"; //Кодировка письма
+        mail($to, $subject, $message, $headers); //Отправка письма с помощью функции mail
+}
 ?>
