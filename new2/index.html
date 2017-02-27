@@ -1,207 +1,1159 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-
+<html lang="ru">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
     <title>Home Page</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <link rel="stylesheet" href="css/slick.css">
-    <link rel="stylesheet" href="css/slick-theme.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!--[if lt IE 9]><script src="js/html5.js"></script><![endif]-->
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/slick.css">
+    <link rel="stylesheet" href="styles/slick-theme.css">
 </head>
 
-<body class="loaded">
-    <!-- BEGIN BODY -->
-    <div class="main-wrapper">
-        <!-- BEGIN HEADER -->
-        <header>
-            <div class="header_wrapper">
-                <div class="header_logo">
-                    <div class="logo">
-                        <a href="#"><img src="./img/logo.png" alt="logotip"></a>
-                    </div>
-                    <div class="text">
-                        Интернет-магазин «Благой арт»
-                    </div>
+<body>
+
+
+<div class="main-wrapper">
+
+<header>
+	<div class="wrapper js_search">
+		<div class="logo">
+			<a href="#"><img class="main_logo" src="./image/logo.png" alt="logotip"><img class="mobil_logo" src="./image/modile_logo.png" alt="modile_logo"></a>
+		</div>
+		<div class="header_phone">
+			<p class="otstup">8-800-777-56-76 <span>Бесплатный звонок для регионов России </span></p>
+			<p > +7 (495) 640-56-76 <span>Многоканальный номер</span></p>
+		</div>
+		<div class="form_search">
+			<form>
+				<input class="search_input" type="text" placeholder="Поиск товаров">
+				<input class="search_submit" type="submit" value="">
+			</form>
+		</div>
+	</div>
+	<div class="header_line">
+		<div class="wrapper">
+			<div class="line_time">
+				<p>График работы интернет-магазина: Пн-пт 9:00-20:00. Сб-Вс 10:00-19:00. Заказ на сайте можно оформить круглосуточно и без выходных. Мы обязательно с вами свяжемся.</p>
+			</div>
+		</div>
+	</div>
+	<nav>
+		<div class="wrapper">
+			<div class="main_menu">
+				<div class="toggle_btn"><span></span></div>
+				<ul>                                                  
+					<li><a href="#">ГЛАВНАЯ</a></li>
+					<li><a href="#">СТАТЬИ</a></li>
+					<li><a href="#">АКЦИИ И СКИДКИ</a></li>
+					<li><a href="#">ШОУ-РУМ</a></li>
+					<li><a href="#">ГАРАНТИЯ И ВОЗВРАТ</a></li>
+					<li><a href="#">СБОРКА МЕБЕЛИ</a></li>
+					<li><a href="#">ВСЁ О ДОСТАВКЕ</a></li>
+					<li><a href="#">КОНТАКТЫ</a></li>
+				</ul>
+			</div>
+			<div class="cart_block">
+				<p>корзина</p>
+				<span>3<b>товара</b></span>
+			</div>
+		</div>
+	</nav>
+	<div class="bottom_line">
+		<div class="wrapper js_modul">
+			<p>Мы осуществляем доставку товаров по всей России, Белоруссии, Казахстану Доставка по Москве бесплатная!</p>
+		</div>
+	</div>
+</header>
+<!-- BEGIN CONTENT -->
+
+    <div class="wrapper">
+        <main class="content">
+            <div class="sidebar">
+                <div class="sidebar_title">
+                    каталог
                 </div>
-                <div class="form_search">
-                    <form>
-                        <input class="input_search" type="text" placeholder="Введите название или артикул">
-                        <input class="input_submit" type="submit" value="">
-                    </form>
+                <section class="ac-container">
+                    <div>
+                        <input id="ac-1" name="accordion-1" type="checkbox" />
+                        <label for="ac-1">Детские коляски</label>
+                        <article class="article">
+                            <ul>
+                                <li><a href="">Коляски люльки</a></li>
+                                <li><a href="">Детские коляски 2 в 1</a></li>
+                                <li><a href="">Детские коляски 3 в 1</a></li>
+                                <li><a href="">Коляски трансформеры</a></li>
+                                <li><a href="">Прогулочные коляски</a></li>
+                                <li><a href="">Коляски трости</a></li>
+                                <li><a href="">Люльки</a></li>
+                                <li><a href="">Коляски для двойни и тройни</a></li>
+                                <li><a href="">Муфты для рук</a></li>
+                            </ul>
+                        </article>
+                    </div>
+                    <div>
+                        <input id="ac-2" name="accordion-1" type="checkbox" />
+                        <label for="ac-2">Детские кроватки</label>
+                        <article class="article">
+                            <ul>
+                                <li><a href="">Коляски люльки</a></li>
+                                <li><a href="">Детские коляски 2 в 1</a></li>
+                                <li><a href="">Детские коляски 3 в 1</a></li>
+                                <li><a href="">Коляски трансформеры</a></li>
+                                <li><a href="">Прогулочные коляски</a></li>
+                                <li><a href="">Коляски трости</a></li>
+                                <li><a href="">Люльки</a></li>
+                                <li><a href="">Коляски для двойни и тройни</a></li>
+                                <li><a href="">Муфты для рук</a></li>
+                            </ul>
+                        </article>
+                    </div>
+                    <div>
+                        <input id="ac-3" name="accordion-1" type="checkbox" />
+                        <label for="ac-3">Шкафы и комоды</label>
+                        <article class="article">
+                            <ul>
+                                <li><a href="">Коляски люльки</a></li>
+                                <li><a href="">Детские коляски 2 в 1</a></li>
+                                <li><a href="">Детские коляски 3 в 1</a></li>
+                                <li><a href="">Коляски трансформеры</a></li>
+                                <li><a href="">Прогулочные коляски</a></li>
+                                <li><a href="">Коляски трости</a></li>
+                                <li><a href="">Люльки</a></li>
+                                <li><a href="">Коляски для двойни и тройни</a></li>
+                                <li><a href="">Муфты для рук</a></li>
+                            </ul>
+                        </article>
+                    </div>
+                    <div>
+                        <input id="ac-4" name="accordion-1" type="checkbox" />
+                        <label for="ac-4">Матрасы и наматрасники</label>
+                        <article class="article">
+                            <ul>
+                                <li><a href="">Коляски люльки</a></li>
+                                <li><a href="">Детские коляски 2 в 1</a></li>
+                                <li><a href="">Детские коляски 3 в 1</a></li>
+                                <li><a href="">Коляски трансформеры</a></li>
+                                <li><a href="">Прогулочные коляски</a></li>
+                                <li><a href="">Коляски трости</a></li>
+                                <li><a href="">Люльки</a></li>
+                                <li><a href="">Коляски для двойни и тройни</a></li>
+                                <li><a href="">Муфты для рук</a></li>
+                            </ul>
+                        </article>
+                    </div>
+                    <div>
+                        <input id="ac-5" name="accordion-1" type="checkbox" />
+                        <label for="ac-5">Постельные принадл.</label>
+                        <article class="article">
+                            <ul>
+                                <li><a href="">Коляски люльки</a></li>
+                                <li><a href="">Детские коляски 2 в 1</a></li>
+                                <li><a href="">Детские коляски 3 в 1</a></li>
+                                <li><a href="">Коляски трансформеры</a></li>
+                                <li><a href="">Прогулочные коляски</a></li>
+                                <li><a href="">Коляски трости</a></li>
+                                <li><a href="">Люльки</a></li>
+                                <li><a href="">Коляски для двойни и тройни</a></li>
+                                <li><a href="">Муфты для рук</a></li>
+                            </ul>
+                        </article>
+                    </div>
+                    <div>
+                        <input id="ac-6" name="accordion-1" type="checkbox" />
+                        <label for="ac-6">Все для кроватки</label>
+                        <article class="article">
+                            <ul>
+                                <li><a href="">Коляски люльки</a></li>
+                                <li><a href="">Детские коляски 2 в 1</a></li>
+                                <li><a href="">Детские коляски 3 в 1</a></li>
+                                <li><a href="">Коляски трансформеры</a></li>
+                                <li><a href="">Прогулочные коляски</a></li>
+                                <li><a href="">Коляски трости</a></li>
+                                <li><a href="">Люльки</a></li>
+                                <li><a href="">Коляски для двойни и тройни</a></li>
+                                <li><a href="">Муфты для рук</a></li>
+                            </ul>
+                        </article>
+                    </div>
+                    <div>
+                        <input id="ac-8" name="accordion-1" type="checkbox" />
+                        <label for="ac-8">Игровая мебель</label>
+                        <article class="article">
+                            <ul>
+                                <li><a href="">Коляски люльки</a></li>
+                                <li><a href="">Детские коляски 2 в 1</a></li>
+                                <li><a href="">Детские коляски 3 в 1</a></li>
+                                <li><a href="">Коляски трансформеры</a></li>
+                                <li><a href="">Прогулочные коляски</a></li>
+                                <li><a href="">Коляски трости</a></li>
+                                <li><a href="">Люльки</a></li>
+                                <li><a href="">Коляски для двойни и тройни</a></li>
+                                <li><a href="">Муфты для рук</a></li>
+                            </ul>
+                        </article>
+                    </div>
+                    <div>
+                        <input id="ac-9" name="accordion-1" type="checkbox" />
+                        <label for="ac-9">Качели и шезлонги</label>
+                        <article class="article">
+                            <ul>
+                                <li><a href="">Коляски люльки</a></li>
+                                <li><a href="">Детские коляски 2 в 1</a></li>
+                                <li><a href="">Детские коляски 3 в 1</a></li>
+                                <li><a href="">Коляски трансформеры</a></li>
+                                <li><a href="">Прогулочные коляски</a></li>
+                                <li><a href="">Коляски трости</a></li>
+                                <li><a href="">Люльки</a></li>
+                                <li><a href="">Коляски для двойни и тройни</a></li>
+                                <li><a href="">Муфты для рук</a></li>
+                            </ul>
+                        </article>
+                    </div>
+                    <div>
+                        <input id="ac-10" name="accordion-1" type="checkbox" />
+                        <label for="ac-10">Безопасность</label>
+                        <article class="article">
+                            <p>Some content... </p>
+                            <p>Some content... </p>
+                        </article>
+                    </div>
+                    <div>
+                        <input id="ac-11" name="accordion-1" type="checkbox" />
+                        <label for="ac-11">Манежи</label>
+                        <article class="article">
+                            <ul>
+                                <li><a href="">Коляски люльки</a></li>
+                                <li><a href="">Детские коляски 2 в 1</a></li>
+                                <li><a href="">Детские коляски 3 в 1</a></li>
+                                <li><a href="">Коляски трансформеры</a></li>
+                                <li><a href="">Прогулочные коляски</a></li>
+                                <li><a href="">Коляски трости</a></li>
+                                <li><a href="">Люльки</a></li>
+                                <li><a href="">Коляски для двойни и тройни</a></li>
+                                <li><a href="">Муфты для рук</a></li>
+                            </ul>
+                        </article>
+                    </div>
+                    <div>
+                        <input id="ac-12" name="accordion-1" type="checkbox" />
+                        <label for="ac-12">Автокресла</label>
+                        <article class="article">
+                            <ul>
+                                <li><a href="">Коляски люльки</a></li>
+                                <li><a href="">Детские коляски 2 в 1</a></li>
+                                <li><a href="">Детские коляски 3 в 1</a></li>
+                                <li><a href="">Коляски трансформеры</a></li>
+                                <li><a href="">Прогулочные коляски</a></li>
+                                <li><a href="">Коляски трости</a></li>
+                                <li><a href="">Люльки</a></li>
+                                <li><a href="">Коляски для двойни и тройни</a></li>
+                                <li><a href="">Муфты для рук</a></li>
+                            </ul>
+                        </article>
+                    </div>
+                    <div>
+                        <input id="ac-13" name="accordion-1" type="checkbox" />
+                        <label for="ac-13">Стульчики для кормления</label>
+                        <article class="article">
+                            <ul>
+                                <li><a href="">Коляски люльки</a></li>
+                                <li><a href="">Детские коляски 2 в 1</a></li>
+                                <li><a href="">Детские коляски 3 в 1</a></li>
+                                <li><a href="">Коляски трансформеры</a></li>
+                                <li><a href="">Прогулочные коляски</a></li>
+                                <li><a href="">Коляски трости</a></li>
+                                <li><a href="">Люльки</a></li>
+                                <li><a href="">Коляски для двойни и тройни</a></li>
+                                <li><a href="">Муфты для рук</a></li>
+                            </ul>
+                        </article>
+                    </div>
+                    <div>
+                        <input id="ac-14" name="accordion-1" type="checkbox" />
+                        <label for="ac-14">Электронные устройства</label>
+                        <article class="article">
+                            <ul>
+                                <li><a href="">Коляски люльки</a></li>
+                                <li><a href="">Детские коляски 2 в 1</a></li>
+                                <li><a href="">Детские коляски 3 в 1</a></li>
+                                <li><a href="">Коляски трансформеры</a></li>
+                                <li><a href="">Прогулочные коляски</a></li>
+                                <li><a href="">Коляски трости</a></li>
+                                <li><a href="">Люльки</a></li>
+                                <li><a href="">Коляски для двойни и тройни</a></li>
+                                <li><a href="">Муфты для рук</a></li>
+                            </ul>
+                        </article>
+                    </div>
+                    <div>
+                        <input id="ac-15" name="accordion-1" type="checkbox" />
+                        <label for="ac-15">Все для кормления</label>
+                        <article class="article">
+                            <ul>
+                                <li><a href="">Коляски люльки</a></li>
+                                <li><a href="">Детские коляски 2 в 1</a></li>
+                                <li><a href="">Детские коляски 3 в 1</a></li>
+                                <li><a href="">Коляски трансформеры</a></li>
+                                <li><a href="">Прогулочные коляски</a></li>
+                                <li><a href="">Коляски трости</a></li>
+                                <li><a href="">Люльки</a></li>
+                                <li><a href="">Коляски для двойни и тройни</a></li>
+                                <li><a href="">Муфты для рук</a></li>
+                            </ul>
+                        </article>
+                    </div>
+                    <div>
+                        <input id="ac-16" name="accordion-1" type="checkbox" />
+                        <label for="ac-16">Купание и гигиена</label>
+                        <article class="article">
+                            <ul>
+                                <li><a href="">Коляски люльки</a></li>
+                                <li><a href="">Детские коляски 2 в 1</a></li>
+                                <li><a href="">Детские коляски 3 в 1</a></li>
+                                <li><a href="">Коляски трансформеры</a></li>
+                                <li><a href="">Прогулочные коляски</a></li>
+                                <li><a href="">Коляски трости</a></li>
+                                <li><a href="">Люльки</a></li>
+                                <li><a href="">Коляски для двойни и тройни</a></li>
+                                <li><a href="">Муфты для рук</a></li>
+                            </ul>
+                        </article>
+                    </div>
+                    <div>
+                        <input id="ac-17" name="accordion-1" type="checkbox" />
+                        <label for="ac-17">Детские игрушки</label>
+                        <article class="article">
+                            <ul>
+                                <li><a href="">Коляски люльки</a></li>
+                                <li><a href="">Детские коляски 2 в 1</a></li>
+                                <li><a href="">Детские коляски 3 в 1</a></li>
+                                <li><a href="">Коляски трансформеры</a></li>
+                                <li><a href="">Прогулочные коляски</a></li>
+                                <li><a href="">Коляски трости</a></li>
+                                <li><a href="">Люльки</a></li>
+                                <li><a href="">Коляски для двойни и тройни</a></li>
+                                <li><a href="">Муфты для рук</a></li>
+                            </ul>
+                        </article>
+                    </div>
+                    <div>
+                        <input id="ac-18" name="accordion-1" type="checkbox" />
+                        <label for="ac-18">Детский транспорт</label>
+                        <article class="article">
+                            <ul>
+                                <li><a href="">Коляски люльки</a></li>
+                                <li><a href="">Детские коляски 2 в 1</a></li>
+                                <li><a href="">Детские коляски 3 в 1</a></li>
+                                <li><a href="">Коляски трансформеры</a></li>
+                                <li><a href="">Прогулочные коляски</a></li>
+                                <li><a href="">Коляски трости</a></li>
+                                <li><a href="">Люльки</a></li>
+                                <li><a href="">Коляски для двойни и тройни</a></li>
+                                <li><a href="">Муфты для рук</a></li>
+                            </ul>
+                        </article>
+                    </div>
+                    <div>
+                        <input id="ac-19" name="accordion-1" type="checkbox" />
+                        <label for="ac-19">Слинги и рюкзаки</label>
+                        <article class="article">
+                            <ul>
+                                <li><a href="">Коляски люльки</a></li>
+                                <li><a href="">Детские коляски 2 в 1</a></li>
+                                <li><a href="">Детские коляски 3 в 1</a></li>
+                                <li><a href="">Коляски трансформеры</a></li>
+                                <li><a href="">Прогулочные коляски</a></li>
+                                <li><a href="">Коляски трости</a></li>
+                                <li><a href="">Люльки</a></li>
+                                <li><a href="">Коляски для двойни и тройни</a></li>
+                                <li><a href="">Муфты для рук</a></li>
+                            </ul>
+                        </article>
+                    </div>
+                    <div>
+                        <input id="ac-20" name="accordion-1" type="checkbox" />
+                        <label for="ac-20">Ходунки и прыгунки</label>
+                        <article class="article">
+                            <ul>
+                                <li><a href="">Коляски люльки</a></li>
+                                <li><a href="">Детские коляски 2 в 1</a></li>
+                                <li><a href="">Детские коляски 3 в 1</a></li>
+                                <li><a href="">Коляски трансформеры</a></li>
+                                <li><a href="">Прогулочные коляски</a></li>
+                                <li><a href="">Коляски трости</a></li>
+                                <li><a href="">Люльки</a></li>
+                                <li><a href="">Коляски для двойни и тройни</a></li>
+                                <li><a href="">Муфты для рук</a></li>
+                            </ul>
+                        </article>
+                    </div>
+                    <div>
+                        <input id="ac-21" name="accordion-1" type="checkbox" />
+                        <label for="ac-21">Спецпредложения</label>
+                        <article class="article">
+                            <ul>
+                                <li><a href="">Коляски люльки</a></li>
+                                <li><a href="">Детские коляски 2 в 1</a></li>
+                                <li><a href="">Детские коляски 3 в 1</a></li>
+                                <li><a href="">Коляски трансформеры</a></li>
+                                <li><a href="">Прогулочные коляски</a></li>
+                                <li><a href="">Коляски трости</a></li>
+                                <li><a href="">Люльки</a></li>
+                                <li><a href="">Коляски для двойни и тройни</a></li>
+                                <li><a href="">Муфты для рук</a></li>
+                            </ul>
+                        </article>
+                    </div>
+                </section>
+                <div class="social_blocks">
+                	<div ><a class="sosial_link social_instagram" href="#"></a></div>
+                	<div ><a class="sosial_link social_friends" href="#"></a></div>
+                	<div ><a class="sosial_link social_facebook" href="#"></a></div>
+                	<div ><a class="sosial_link social_vk" href="#"></a></div>
                 </div>
-                <div class="phone">+7 (800) 707-81-39</div>
-                <div class="right">
-                    <div class="working">ПН-ПТ с 9:00 до 18:00</div>
-                    <div class="delivery">Доставка по РФ и СНГ</div>
-                </div>
-                <div class="js_block"></div>
-                <div class="clearfix"></div>
-                <div class="main_menu">
-                    <nav>
-                        <ul>
-                            <li class="main_link dropdown">
-                                <a class="dropdown-toggle" href="#">КАТАЛОГ ТОВАРОВ</a>
-                                <i class="click_arrow"></i>
-                                <ul class="dropdown-menu">
-                                    <li class="inner_dropdown">
-                                        <a href="#">Свадебная бижутерия</a>
-                                        <i class="inner_arrow1"></i>
-                                        <ul class="inner__dropdown-menu">
-                                            <li class="dropdown_title">Свадебная бижутерия</li>
-                                            <li><a href="#">Браслеты</a></li>
-                                            <li><a href="#">Кулоны</a></li>
-                                            <li><a href="#">Зажимы и запонки</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#">Аксессуары для волос</a></li>
-                                    <li><a href="#">Броши</a></li>
-                                    <li class="inner_dropdown">
-                                        <a href="#">Мужские аксессуары</a>
-                                        <i class="inner_arrow1"></i>
-                                        <ul class="inner__dropdown-menu">
-                                            <li class="dropdown_title">МУЖСКАЯ БИЖУТЕРИЯ</li>
-                                            <li><a href="#">Браслеты</a></li>
-                                            <li><a href="#">Кулоны</a></li>
-                                            <li><a href="#">Зажимы и запонки</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#">Клатчи</a></li>
-                                    <li><a href="#">Детская бижутерия</a></li>
-                                    <li><a href="#">Демонстрационное оборудование</a></li>
-                                </ul>
-                            </li>
-                            <li class="main_link"><a href="#">УСЛОВИЯ РАБОТЫ</a></li>
-                            <li class="main_link"><a href="#">СКИДКИ</a></li>
-                            <li class="main_link"><a href="#">ОПЛАТА И ДОСТАВКА</a></li>
-                            <li class="main_link"><a href="#">ДОКУМЕНТЫ</a></li>
-                            <li class="main_link"><a href="#">КОНТАКТЫ</a></li>
-                        </ul>
-                    </nav>
-                    <div class="navbar_right2"></div>
-                    <div class="navbar_right" id="js_carry">
-                        <div class="basked">
-                            <p><b>1</b>ТОВАРОВ / <span>56 789 Р</span></p>
-                        </div>
-                        <div class="enter">
-                            <p>ВОЙТИ</p>
-                        </div>
-                    </div>
-                    <div class="clearfix"></div>
-                </div>
-            </div>
-        </header>
-        <div class="moby_header">
-            <section class="tabs">
-                <input id="tab_1" type="radio" name="tab" checked />
-                <input id="tab_2" type="radio" name="tab" />
-                <input id="tab_3" type="radio" name="tab" />
-                <input id="tab_4" type="radio" name="tab" />
-                <input id="tab_5" type="radio" name="tab" />
-                <input id="tab_6" type="radio" name="tab" />
-                <label for="tab_1" id="tab_l1"><i class="fa fa-bars" aria-hidden="true"></i></label>
-                <label for="tab_2" id="tab_l2"><i class="fa fa-home" aria-hidden="true"></i></label>
-                <label for="tab_3" id="tab_l3"><i class="fa fa-search" aria-hidden="true"></i></label>
-                <label for="tab_4" id="tab_l4"><i class="fa fa-shopping-cart" aria-hidden="true"></i></label>
-                <label for="tab_5" id="tab_l5"><i class="fa fa-user-plus" aria-hidden="true"></i></label>
-                <label for="tab_6" id="tab_l6"><i class="fa fa-phone" aria-hidden="true"></i></label>
-                <div style="clear:both"></div>
-                <div class="tabs_cont">
-                    <div id="tab_c1">
-						<div class="header_logo">
-		                    <div class="logo">
-		                        <a href="#"><img src="./img/logo.png" alt="logotip"></a>
-		                    </div>
-		                    <div class="text">
-		                        Интернет-магазин «Благой арт»
-		                    </div>
-		                </div>
-                    </div>
-                    <div id="tab_c2">
-						<div class="min_block">maybe menu</div>
-                    </div>
-                    <div id="tab_c3">
-		                <div class="form_search">
-		                    <form>
-		                        <input class="input_search" type="text" placeholder="Введите название или артикул">
-		                        <input class="input_submit" type="submit" value="">
-		                    </form>
-		                </div>
-                    </div>
-                    <div id="tab_c4">
-                    	<div class="navbar_right">
-	                        <div class="basked">
-	                            <p><b>1</b>ТОВАРОВ / <span>56 789 Р</span></p>
-	                        </div>
-                    	</div>
-                    </div>
-                    <div id="tab_c5">
-                       	<div class="navbar_right">
-							<div class="enter">
-	                            <p>ВОЙТИ</p>
-	                        </div>
-                        </div>
-                    </div>
-                    <div id="tab_c6"> 
-                    	<div class="header_right">       
-	                    	<div class="phone">+7 (800) 707-81-39</div>
-	                		<div class="right">
-			                    <div class="working">ПН-ПТ с 9:00 до 18:00</div>
-			                    <div class="delivery">Доставка по РФ и СНГ</div>
-	                		</div>
-                		</div>
+                <div class="sidebar_articles">
+                	<div class="articles_title">
+                		статьи
+                	</div>
+                	<div class="list_article">
+                		<a href="#">Детская коляска Expander Mondo Ecco 2 в 1</a>
+                		<span class="data">21.08.2016</span>
+                		<p>Наш интернет-магазин всегда готов предоставить Вам ... </p>
+                	</div>
+                	<div class="list_article">
+                		<a href="#">Детская коляска Expander Mondo Ecco 2 в 1</a>
+                		<span class="data">21.08.2016</span>
+                		<p>Наш интернет-магазин всегда готов предоставить Вам ... </p>
+                	</div>
+                	<div class="list_article">
+                		<a href="#">Детская коляска Expander Mondo Ecco 2 в 1</a>
+                		<span class="data">21.08.2016</span>
+                		<p>Наш интернет-магазин всегда готов предоставить Вам ... </p>
+                	</div>
+                	<div class="list_article">
+                		<a href="#">Детская коляска Expander Mondo Ecco 2 в 1</a>
+                		<span class="data">21.08.2016</span>
+                		<p>Наш интернет-магазин всегда готов предоставить Вам ... </p>
+                	</div>
+                	<div class="list_article">
+                		<a href="#">Детская коляска Expander Mondo Ecco 2 в 1</a>
+                		<span class="data">21.08.2016</span>
+                		<p>Наш интернет-магазин всегда готов предоставить Вам ... </p>
                 	</div>
                 </div>
-            </section>
-        </div>
-        <!-- HEADER EOF   -->
-        <!-- BEGIN CONTENT -->
-        <main class="content">
-            <section class="box-contact">
-                <div class="wrapper">
-                    <div class="slider">
-                        <div>
-                            <div class="slider_text">Новая коллекция
-                                <br>SWAROVSKI уже здесь!</div>
-                            <img src="./img/slider_img1.jpg" alt="slider">
+                <a class="yandex" href="#"><img src="./image/yandex.png" alt="yandex"></a>
+            </div>
+            <div class="prost general_page">
+                <div class="inner_header">
+                    <div class="main_slider">
+                        <div class="slide_action">
+                            <img class="main_img" src="./image/general_baner.jpg" alt="general_baner">
+                            <img class="mobile_img" src="./image/mobile_img.png" alt="mobile_img">
+                            <div class="slider_text">
+                                <p class="baner_title">гуляйте
+                                    <br>с комфортом!</p>
+                                <p>При покупке коляски <span>Camarelo 2в1 b 3в1</span></p>
+                                <p>муфта для рук <span>Bambola</span>в подарок!</p>
+                                <a class="btn_more" href="#">подробнее</a>
+                            </div>
+                        </div>
+                        <div class="">
+                            <img class="main_img" src="./image/general_baner.jpg" alt="general_baner">
+                            <img class="mobile_img" src="./image/mobile_img.png" alt="mobile_img">
+                            <div class="slide_action slider_text">
+                                <p class="baner_title">гуляйте
+                                    <br>с комфортом!</p>
+                                <p>При покупке коляски <span>Camarelo 2в1 b 3в1</span></p>
+                                <p>муфта для рук <span>Bambola</span>в подарок!</p>
+                                <a class="btn_more" href="#">подробнее</a>
+                            </div>
                         </div>
                         <div>
-                            <img src="./img/slider_img1.jpg" alt="slider">
+                            <img class="main_img" src="./image/general_baner.jpg" alt="general_baner">
+                            <img class="mobile_img" src="./image/mobile_img.png" alt="mobile_img">
+                            <div class="slide_action slider_text">
+                                <p class="baner_title">гуляйте
+                                    <br>с комфортом!</p>
+                                <p>При покупке коляски <span>Camarelo 2в1 b 3в1</span></p>
+                                <p>муфта для рук <span>Bambola</span>в подарок!</p>
+                                <a class="btn_more" href="#">подробнее</a>
+                            </div>
                         </div>
                         <div>
-                            <img src="./img/slider_img1.jpg" alt="slider">
+                            <img class="main_img" src="./image/general_baner.jpg" alt="general_baner">
+                            <img class="mobile_img" src="./image/mobile_img.png" alt="mobile_img.png">
+                            <div class="slide_action slider_text">
+                                <p class="baner_title">гуляйте
+                                    <br>с комфортом!</p>
+                                <p>При покупке коляски <span>Camarelo 2в1 b 3в1</span></p>
+                                <p>муфта для рук <span>Bambola</span>в подарок!</p>
+                                <a class="btn_more" href="#">подробнее</a>
+                            </div>
+                        </div>
+                        <div class="slide_action">
+                            <img class="main_img" src="./image/general_baner.jpg" alt="general_baner">
+                            <img class="mobile_img" src="./image/mobile_img.png" alt="mobile_img">
+                            <div class="slide_action slider_text">
+                                <p class="baner_title">гуляйте
+                                    <br>с комфортом!</p>
+                                <p>При покупке коляски <span>Camarelo 2в1 b 3в1</span></p>
+                                <p>муфта для рук <span>Bambola</span>в подарок!</p>
+                                <a class="btn_more" href="#">подробнее</a>
+                            </div>
                         </div>
                     </div>
+                    <div class="mobi_filter">
+                    	<div class="title_filter">бренды по алфавиту</div>
+                    	<ul>
+                    		<li><a href="#"><img src="./image/mob1.png" alt="mob">Детские кроватки</a></li>
+                    		<li><a href="#"><img src="./image/mob2.png" alt="mob">Детские коляски</a></li>
+                    		<li><a href="#"><img src="./image/mob3.png" alt="mob">Детские манежы</a></li>
+                    		<li><a href="#"><img src="./image/mob4.png" alt="mob">Детские конверты</a></li>
+                    		<li><a href="#"><img src="./image/mob5.png" alt="mob">Детские автокресла</a></li>
+                    		<li><a href="#"><img src="./image/mob6.png" alt="mob">Детские комоды</a></li>
+                    	</ul>
+                    </div>
+                    <div class="mobi_categori">
+                    	<div class="title_categori">категории</div>
+                    	<div class="categori_list">
+                    		<div class="name_categori">избранные товары</div>
+                    		<ul>
+                    			<li>
+                    				<a href="">Детская коляска Expander Mondo Ecco 2 в 1</a>
+                    				<p class="data">21.08.2016</p>
+                    				<p>Наш интернет-магазин всегда готов предоставить Вам широкий... </p>
+                    			</li>
+                    			<li>
+                    				<a href="">Детская коляска Expander Mondo Ecco 2 в 1</a>
+                    				<p class="data">21.08.2016</p>
+                    				<p>Наш интернет-магазин всегда готов предоставить Вам широкий... </p>
+                    			</li>
+                    			<li>
+                    				<a href="">Детская коляска Expander Mondo Ecco 2 в 1</a>
+                    				<p class="data">21.08.2016</p>
+                    				<p>Наш интернет-магазин всегда готов предоставить Вам широкий... </p>
+                    			</li>
+                    		</ul>
+                    	</div>
+                    	<div class="categori_list">
+                    		<div class="name_categori">Новости</div>
+                    		<ul>
+                    			<li>
+                    				<a href="">Детская коляска Expander Mondo Ecco 2 в 1</a>
+                    				<p class="data">21.08.2016</p>
+                    				<p>Наш интернет-магазин всегда готов предоставить Вам широкий... </p>
+                    			</li>
+                    			<li>
+                    				<a href="">Детская коляска Expander Mondo Ecco 2 в 1</a>
+                    				<p class="data">21.08.2016</p>
+                    				<p>Наш интернет-магазин всегда готов предоставить Вам широкий... </p>
+                    			</li>
+                    			<li>
+                    				<a href="">Детская коляска Expander Mondo Ecco 2 в 1</a>
+                    				<p class="data">21.08.2016</p>
+                    				<p>Наш интернет-магазин всегда готов предоставить Вам широкий... </p>
+                    			</li>
+                    		</ul>
+                    	</div>
+                    	<div class="categori_list">
+                    		<div class="name_categori">мы на маркете</div>
+                    		<ul>
+                    			<li>
+                    				<a href="">Детская коляска Expander Mondo Ecco 2 в 1</a>
+                    				<p class="data">21.08.2016</p>
+                    				<p>Наш интернет-магазин всегда готов предоставить Вам широкий... </p>
+                    			</li>
+                    			<li>
+                    				<a href="">Детская коляска Expander Mondo Ecco 2 в 1</a>
+                    				<p class="data">21.08.2016</p>
+                    				<p>Наш интернет-магазин всегда готов предоставить Вам широкий... </p>
+                    			</li>
+                    			<li>
+                    				<a href="">Детская коляска Expander Mondo Ecco 2 в 1</a>
+                    				<p class="data">21.08.2016</p>
+                    				<p>Наш интернет-магазин всегда готов предоставить Вам широкий... </p>
+                    			</li>
+                    		</ul>
+                    	</div>
+                    	<div class="categori_list">
+                    		<div class="name_categori">мы в соц.сетях</div>
+                    		<ul>
+                    			<li>
+                    				<a href="">Детская коляска Expander Mondo Ecco 2 в 1</a>
+                    				<p class="data">21.08.2016</p>
+                    				<p>Наш интернет-магазин всегда готов предоставить Вам широкий... </p>
+                    			</li>
+                    			<li>
+                    				<a href="">Детская коляска Expander Mondo Ecco 2 в 1</a>
+                    				<p class="data">21.08.2016</p>
+                    				<p>Наш интернет-магазин всегда готов предоставить Вам широкий... </p>
+                    			</li>
+                    			<li>
+                    				<a href="">Детская коляска Expander Mondo Ecco 2 в 1</a>
+                    				<p class="data">21.08.2016</p>
+                    				<p>Наш интернет-магазин всегда готов предоставить Вам широкий... </p>
+                    			</li>
+                    		</ul>
+                    	</div>
+                    	<div class="categori_list">
+                    		<div class="name_categori">безналичная оплата подтвержденных заказов</div>
+                    		<ul>
+                    			<li>
+                    				<a href="">Детская коляска Expander Mondo Ecco 2 в 1</a>
+                    				<p class="data">21.08.2016</p>
+                    				<p>Наш интернет-магазин всегда готов предоставить Вам широкий... </p>
+                    			</li>
+                    			<li>
+                    				<a href="">Детская коляска Expander Mondo Ecco 2 в 1</a>
+                    				<p class="data">21.08.2016</p>
+                    				<p>Наш интернет-магазин всегда готов предоставить Вам широкий... </p>
+                    			</li>
+                    			<li>
+                    				<a href="">Детская коляска Expander Mondo Ecco 2 в 1</a>
+                    				<p class="data">21.08.2016</p>
+                    				<p>Наш интернет-магазин всегда готов предоставить Вам широкий... </p>
+                    			</li>
+                    		</ul>
+                    	</div>
+                    	<div class="categori_list">
+                    		<div class="name_categori">популярные товары</div>
+                    		<ul>
+                    			<li>
+                    				<a href="">Детская коляска Expander Mondo Ecco 2 в 1</a>
+                    				<p class="data">21.08.2016</p>
+                    				<p>Наш интернет-магазин всегда готов предоставить Вам широкий... </p>
+                    			</li>
+                    			<li>
+                    				<a href="">Детская коляска Expander Mondo Ecco 2 в 1</a>
+                    				<p class="data">21.08.2016</p>
+                    				<p>Наш интернет-магазин всегда готов предоставить Вам широкий... </p>
+                    			</li>
+                    			<li>
+                    				<a href="">Детская коляска Expander Mondo Ecco 2 в 1</a>
+                    				<p class="data">21.08.2016</p>
+                    				<p>Наш интернет-магазин всегда готов предоставить Вам широкий... </p>
+                    			</li>
+                    		</ul>
+                    	</div>
+                    </div>
                 </div>
-            </section>
-            <section class="box-products">
-                <div class="wrapper">
+            
+                <div class="inner_tovar">
+                    <div class="inner_media">
+                        <div class="general_text">
+                            <h3>Самый большой выбор качественных товаров для Вашего ребенка в интернет-магазине «Ваша первая покупка» с доставкой по всей России, Казахстану и Белоруссии!</h3>
+                            <p>Наш интернет-магазин всегда готов предоставить Вам широкий ассортимент любых моделей детских колясок, детских кроваток, автокресел, постельных принадлежностей, стульчиков для кормления, а так же других полезных и красивых вещей, таких важных для ухода за Вашим ребенком. Все товары имеют соответствующие сертификаты качества, и Вы можете быть уверены в их экологичности и безопасности для Вашего малыша.</p>
+                        </div>
+                        <div class="attractive_prices">
+                            <div class="prices_title">
+                                <h2>Привлекательные цены</h2></div>
+                            <ul class="list_prams">
+                                <li class="items item_action">
+                                    <a href="#" class="img_inner">
+                                        <img src="./image/pram1.jpg" alt="pram">
+                                    </a>
+                                    <div class="product-container">
+                                        <a href="">Детская коляска Expander Mondo Ecco 2 в 1</a>
+                                        <span>25 500 руб.</span>
+                                    </div>
+                                </li>
+                                <li class="items">
+                                    <a href="#" class="img_inner">
+                                        <img src="./image/pram1.jpg" alt="pram">
+                                    </a>
+                                    <div class="product-container">
+                                        <a href="">Детская коляска Expander Mondo Ecco 2 в 1</a>
+                                        <span>25 500 руб.</span>
+                                    </div>
+                                </li>
+                                <li class="items">
+                                    <a href="#" class="img_inner">
+                                        <img src="./image/pram2.jpg" alt="pram">
+                                    </a>
+                                    <div class="product-container">
+                                        <a href="">Детская коляска Expander Mondo Ecco 2 в 1</a>
+                                        <span>25 500 руб.</span>
+                                    </div>
+                                </li>
+                                <li class="items item_action slider_tovar">
+                                    <a href="#" class="img_inner">
+                                        <div class="hero__title" id="animatedHeading">
+                                            <div><img src="./image/pram1.jpg" alt="pram"></div>
+                                            <div><img src="./image/pram2.jpg" alt="pram"></div>
+                                            <div><img src="./image/pram3.jpg" alt="pram"></div>
+                                            <div><img src="./image/pram1.jpg" alt="pram"></div>
+                                            <div><img src="./image/pram2.jpg" alt="pram"></div>
+                                            <div><img src="./image/pram3.jpg" alt="pram"></div>
+                                        </div>
+                                    </a>
+                                    <div class="slider-nav">
+                                        <div><img src="./image/pram1.jpg" alt="pram"></div>
+                                        <div><img src="./image/pram2.jpg" alt="pram"></div>
+                                        <div><img src="./image/pram3.jpg" alt="pram"></div>
+                                        <div><img src="./image/pram1.jpg" alt="pram"></div>
+                                        <div><img src="./image/pram2.jpg" alt="pram"></div>
+                                        <div><img src="./image/pram3.jpg" alt="pram"></div>
+                                        <div><img src="./image/pram3.jpg" alt="pram"></div>
+                                        <div><img src="./image/pram1.jpg" alt="pram"></div>
+                                        <div><img src="./image/pram2.jpg" alt="pram"></div>
+                                        <div><img src="./image/pram3.jpg" alt="pram"></div>
+                                    </div>
+                                    <div class="product-container">
+                                        <a href="">Детская коляска Expander Mondo Ecco 2 в 1</a>
+                                        <span>25 500 руб.</span>
+                                    </div>
+                                </li>
+                                <li class="items">
+                                    <a href="#" class="img_inner">
+                                        <img src="./image/pram3.jpg" alt="pram">
+                                    </a>
+                                    <div class="product-container">
+                                        <a href="">Детская коляска Expander Mondo Ecco 2 в 1</a>
+                                        <span>25 500 руб.</span>
+                                    </div>
+                                </li>
+                                <li class="items">
+                                    <a href="#" class="img_inner">
+                                        <img src="./image/pram3.jpg" alt="pram">
+                                    </a>
+                                    <div class="product-container">
+                                        <a href="">Детская коляска Expander Mondo Ecco 2 в 1</a>
+                                        <span>25 500 руб.</span>
+                                    </div>
+                                </li>
+                                <li class="items">
+                                    <a href="#" class="img_inner">
+                                        <img src="./image/pram4.jpg" alt="pram">
+                                    </a>
+                                    <div class="product-container">
+                                        <a href="">Детская коляска Expander Mondo Ecco 2 в 1</a>
+                                        <span>25 500 руб.</span>
+                                    </div>
+                                </li>
+                                <li class="items">
+                                    <a href="#" class="img_inner">
+                                        <img src="./image/pram4.jpg" alt="pram">
+                                    </a>
+                                    <div class="product-container">
+                                        <a href="">Детская коляска Expander Mondo Ecco 2 в 1</a>
+                                        <span>25 500 руб.</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="products_new">
+                            <div class="title_new">
+                                <h2>наши новинки</h2></div>
+                            <ul class="list_prams">
+                                <li class="items item_action_new">
+                                    <a href="#" class="img_inner">
+                                        <img src="./image/pram1.jpg" alt="pram">
+                                    </a>
+                                    <div class="product-container">
+                                        <a href="">Детская коляска Expander Mondo Ecco 2 в 1</a>
+                                        <span>25 500 руб.</span>
+                                    </div>
+                                </li>
+                                <li class="items">
+                                    <a href="#" class="img_inner">
+                                        <img src="./image/pram1.jpg" alt="pram">
+                                    </a>
+                                    <div class="product-container">
+                                        <a href="">Детская коляска Expander Mondo Ecco 2 в 1</a>
+                                        <span>25 500 руб.</span>
+                                    </div>
+                                </li>
+                                <li class="items">
+                                    <a href="#" class="img_inner">
+                                        <img src="./image/pram2.jpg" alt="pram">
+                                    </a>
+                                    <div class="product-container">
+                                        <a href="">Детская коляска Expander Mondo Ecco 2 в 1</a>
+                                        <span>25 500 руб.</span>
+                                    </div>
+                                </li>
+                                <li class="items item_action_new slider_tovar">
+                                    <a href="#" class="img_inner">
+                                        <div class="hero__title">
+                                            <div><img src="./image/pram1.jpg" alt="pram"></div>
+                                            <div><img src="./image/pram2.jpg" alt="pram"></div>
+                                            <div><img src="./image/pram3.jpg" alt="pram"></div>
+                                            <div><img src="./image/pram1.jpg" alt="pram"></div>
+                                            <div><img src="./image/pram2.jpg" alt="pram"></div>
+                                            <div><img src="./image/pram3.jpg" alt="pram"></div>
+                                        </div>
+                                    </a>
+                                    <div class="slider-nav">
+                                        <div><img src="./image/pram1.jpg" alt="pram"></div>
+                                        <div><img src="./image/pram2.jpg" alt="pram"></div>
+                                        <div><img src="./image/pram3.jpg" alt="pram"></div>
+                                        <div><img src="./image/pram1.jpg" alt="pram"></div>
+                                        <div><img src="./image/pram2.jpg" alt="pram"></div>
+                                        <div><img src="./image/pram3.jpg" alt="pram"></div>
+                                        <div><img src="./image/pram3.jpg" alt="pram"></div>
+                                        <div><img src="./image/pram1.jpg" alt="pram"></div>
+                                        <div><img src="./image/pram2.jpg" alt="pram"></div>
+                                        <div><img src="./image/pram3.jpg" alt="pram"></div>
+                                    </div>
+                                    <div class="product-container">
+                                        <a href="">Детская коляска Expander Mondo Ecco 2 в 1</a>
+                                        <span>25 500 руб.</span>
+                                    </div>
+                                </li>
+                                <li class="items">
+                                    <a href="#" class="img_inner">
+                                        <img src="./image/pram3.jpg" alt="pram">
+                                    </a>
+                                    <div class="product-container">
+                                        <a href="">Детская коляска Expander Mondo Ecco 2 в 1</a>
+                                        <span>25 500 руб.</span>
+                                    </div>
+                                </li>
+                                <li class="items">
+                                    <a href="#" class="img_inner">
+                                        <img src="./image/pram3.jpg" alt="pram">
+                                    </a>
+                                    <div class="product-container">
+                                        <a href="">Детская коляска Expander Mondo Ecco 2 в 1</a>
+                                        <span>25 500 руб.</span>
+                                    </div>
+                                </li>
+                                <li class="items">
+                                    <a href="#" class="img_inner">
+                                        <img src="./image/pram4.jpg" alt="pram">
+                                    </a>
+                                    <div class="product-container">
+                                        <a href="">Детская коляска Expander Mondo Ecco 2 в 1</a>
+                                        <span>25 500 руб.</span>
+                                    </div>
+                                </li>
+                                <li class="items">
+                                    <a href="#" class="img_inner">
+                                        <img src="./image/pram4.jpg" alt="pram">
+                                    </a>
+                                    <div class="product-container">
+                                        <a href="">Детская коляска Expander Mondo Ecco 2 в 1</a>
+                                        <span>25 500 руб.</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="products_hits">
+                            <div class="title_hits">
+                                <h2>хиты продаж</h2></div>
+                            <ul class="list_prams">
+                                <li class="items item_action_hits">
+                                    <a href="#" class="img_inner">
+                                        <img src="./image/pram1.jpg" alt="pram">
+                                    </a>
+                                    <div class="product-container">
+                                        <a href="">Детская коляска Expander Mondo Ecco 2 в 1</a>
+                                        <span>25 500 руб.</span>
+                                    </div>
+                                </li>
+                                <li class="items">
+                                    <a href="#" class="img_inner">
+                                        <img src="./image/pram1.jpg" alt="pram">
+                                    </a>
+                                    <div class="product-container">
+                                        <a href="">Детская коляска Expander Mondo Ecco 2 в 1</a>
+                                        <span>25 500 руб.</span>
+                                    </div>
+                                </li>
+                                <li class="items">
+                                    <a href="#" class="img_inner">
+                                        <img src="./image/pram2.jpg" alt="pram">
+                                    </a>
+                                    <div class="product-container">
+                                        <a href="">Детская коляска Expander Mondo Ecco 2 в 1</a>
+                                        <span>25 500 руб.</span>
+                                    </div>
+                                </li>
+                                <li class="items item_action_hits slider_tovar">
+                                    <a href="#" class="img_inner">
+                                        <img src="./image/pram2.jpg" alt="pram">
+                                    </a>
+                                    <div class="product-container">
+                                        <a href="">Детская коляска Expander Mondo Ecco 2 в 1</a>
+                                        <span>25 500 руб.</span>
+                                    </div>
+                                </li>
+                                <li class="items">
+                                    <a href="#" class="img_inner">
+                                        <img src="./image/pram3.jpg" alt="pram">
+                                    </a>
+                                    <div class="product-container">
+                                        <a href="">Детская коляска Expander Mondo Ecco 2 в 1</a>
+                                        <span>25 500 руб.</span>
+                                    </div>
+                                </li>
+                                <li class="items">
+                                    <a href="#" class="img_inner">
+                                        <img src="./image/pram3.jpg" alt="pram">
+                                    </a>
+                                    <div class="product-container">
+                                        <a href="">Детская коляска Expander Mondo Ecco 2 в 1</a>
+                                        <span>25 500 руб.</span>
+                                    </div>
+                                </li>
+                                <li class="items">
+                                    <a href="#" class="img_inner">
+                                        <img src="./image/pram4.jpg" alt="pram">
+                                    </a>
+                                    <div class="product-container">
+                                        <a href="">Детская коляска Expander Mondo Ecco 2 в 1</a>
+                                        <span>25 500 руб.</span>
+                                    </div>
+                                </li>
+                                <li class="items">
+                                    <a href="#" class="img_inner">
+                                        <img src="./image/pram4.jpg" alt="pram">
+                                    </a>
+                                    <div class="product-container">
+                                        <a href="">Детская коляска Expander Mondo Ecco 2 в 1</a>
+                                        <span>25 500 руб.</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    <div class="general_text">
+                        <h4>Лучший выбор детских колясок и детских кроваток в интернет-магазине «Ваша первая покупка» для удобства всей семьи</h4>
+                        <p>В нашем каталоге представлен наиболее широкий ассортимент моделей детских товаров, ведь мы работаем напрямую с поставщиками, поэтому, помимо гарантии высокого качества, у нас есть возможность порадовать Вас новинками раньше всех!</p>
+                        <h4>Самые разные детские коляски от лучших производителей в нашем интернет-магазине</h4>
+                        <p>У нас Вы можете купить любые детские коляски, как для самых маленьких пассажиров, которые только что родились, так и для подросших малышей, которые уже сидят и ходят самостоятельно. Для новорожденных лучшим вариантом во все времена считаются уютные коляски-люльки, которые имеют плоское дно и высокие бортики с глубоким капюшоном. Такая конструкция защищает малыша, хорошо удерживает тепло внутри и позволяет легко и крепко засыпать. Оптимальные коляски-трансформеры позволяют при покупке не только экономить Ваш семейный бюджет, а еще и место в квартире. Для новорожденных в блок устанавливается люлька, а когда малыш вырастает, он катается в самом блоке. Таким образом, когда Вы уже перестанете использовать люльку, для ее хранения Вам понадобиться минимум места. Для деток постарше выбирают прогулочные коляски с большими возможностями, которые обеспечивают комфортное передвижение в положении «сидя», а так же оснащены функцией откидывающейся спинки, что позволяет ребенку еще и отдыхать во время прогулок. Альтернативой прогулочным моделям выступают легковесные коляски-трости, которые идеально подходят для путешествий за счет своей компактности и невысокого веса. Выбор такой модели зависит от того, что для Вас является преимуществом в данный момент: возможно, это компактность и минимальный вес, а, возможно, Вы хотите легкую мобильную коляску, оснащенную всеми функциями, которые присутствуют в прогулочных моделях.</p>
+                        <a href="" class="btn_more_bottom">подробнее</a>
+                    </div>
+                    </div>
                 </div>
-            </section>
-            <div class="wrapper">
-                <section class="box-inf">
-                </section>
-                <section class="box-inf">
-                </section>
+                <div class="clearfix"></div>
             </div>
-        </main>
-        <!-- CONTENT EOF   -->
-        <!-- BEGIN FOOTER -->
-        <footer>
-            <div class="wrapper">
+            <div class="right_sidebar">
+                <div class="right_links">
+                    <a href="#">
+                        <div class="link_block">
+                            <p>шоу-рум</p>
+                            <span>с 11:00 до 18:00</span>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="link_block right_payment">
+                            <span>безналичная</span>
+                            <p>оплата</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="right_sicial">
+                    <p>делитесь
+                        <br> в соцсетях:</p>
+                    <ul>
+                        <li>
+                            <a href="#"></a>
+                        </li>
+                        <li>
+                            <a class="link_in" href="#"></a>
+                        </li>
+                        <li>
+                            <a class="link_od" href="#"></a>
+                        </li>
+                        <li>
+                            <a class="link_f" href="#"></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="brends">
+                    <div class="brends_title">
+                        Наши бренды
+                    </div>
+                    <div class="filter_table">
+                        <div class="col_header">Все бренды:</div>
+                        <a rel="nofollow" class="brands_by_letter" href="#1">1</a>
+                        <a rel="nofollow" class="brands_by_letter" href="#2">4</a>
+                        <a rel="nofollow" class="brands_by_letter" href="#3">A</a>
+                        <a rel="nofollow" class="brands_by_letter" href="#4">B</a>
+                        <a rel="nofollow" class="brands_by_letter" href="#5">C</a>
+                        <a rel="nofollow" class="brands_by_letter" href="#6">D</a>
+                        <a rel="nofollow" class="brands_by_letter" href="#7">E</a>
+                        <a rel="nofollow" class="brands_by_letter" href="#8">F</a>
+                        <a rel="nofollow" class="brands_by_letter" href="#9">G</a>
+                        <a rel="nofollow" class="brands_by_letter" href="#10">H</a>
+                        <a rel="nofollow" class="brands_by_letter" href="#11">I</a>
+                        <a rel="nofollow" class="brands_by_letter" href="#12">J</a>
+                        <a rel="nofollow" class="brands_by_letter" href="#13">K</a>
+                        <a rel="nofollow" class="brands_by_letter" href="#14">L</a>
+                        <a rel="nofollow" class="brands_by_letter" href="#15">M</a>
+                        <a rel="nofollow" class="brands_by_letter" href="#16">N</a>
+                        <a rel="nofollow" class="brands_by_letter" href="#17">O</a>
+                        <a rel="nofollow" class="brands_by_letter" href="#18">P</a>
+                        <a rel="nofollow" class="brands_by_letter" href="#19">Q</a>
+                        <a rel="nofollow" class="brands_by_letter" href="#20">R</a>
+                        <a rel="nofollow" class="brands_by_letter" href="#21">S</a>
+                        <a rel="nofollow" class="brands_by_letter" href="#22">T</a>
+                        <a rel="nofollow" class="brands_by_letter" href="#23">U</a>
+                        <a rel="nofollow" class="brands_by_letter" href="#24">V</a>
+                        <a rel="nofollow" class="brands_by_letter" href="#25">W</a>
+                        <a rel="nofollow" class="brands_by_letter" href="#26">X</a>
+                        <a rel="nofollow" class="brands_by_letter" href="#27">Y</a>
+                        <a rel="nofollow" class="brands_by_letter" href="#28">Z</a>
+                        <a rel="nofollow" class="brands_by_letter" href="#29">А</a>
+                        <a rel="nofollow" class="brands_by_letter" href="#30">Б</a>
+                        <a rel="nofollow" class="brands_by_letter" href="#31">В</a>
+                        <a rel="nofollow" class="brands_by_letter" href="#32">Г</a>
+                        <a rel="nofollow" class="brands_by_letter" href="#33">Д</a>
+                        <a rel="nofollow" class="brands_by_letter" href="#34">Е</a>
+                        <a rel="nofollow" class="brands_by_letter" href="#35">З</a>
+                        <a rel="nofollow" class="brands_by_letter" href="#36">К</a>
+                        <a rel="nofollow" class="brands_by_letter" href="#37">Л</a>
+                        <a rel="nofollow" class="brands_by_letter" href="#38">М</a>
+                        <a rel="nofollow" class="brands_by_letter" href="#39">Н</a>
+                        <a rel="nofollow" class="brands_by_letter" href="#40">О</a>
+                        <a rel="nofollow" class="brands_by_letter" href="#41">П</a>
+                        <a rel="nofollow" class="brands_by_letter" href="#42">Р</a>
+                        <a rel="nofollow" class="brands_by_letter" href="#43">С</a>
+                        <a rel="nofollow" class="brands_by_letter" href="#44">Т</a>
+                        <a rel="nofollow" class="brands_by_letter" href="#45">Ф</a>
+                        <a rel="nofollow" class="brands_by_letter" href="#46">Ч</a>
+                        <a rel="nofollow" class="brands_by_letter" href="#47">Я</a>
+                    </div>
+                    <div class="flag_filter">
+                        <ul>
+                            <li><img src="./image/flag/Argentina.png" alt="Argentina"><a href="">AdborAdbor</a></li>
+                            <li><img src="./image/flag/Armenia.png" alt="Armenia"><a href="">Armenia</a></li>
+                            <li><img src="./image/flag/Aruba.png" alt="Aruba"><a href="">Aruba</a></li>
+                            <li><img src="./image/flag/Australia.png" alt="Bebe-mobileBebe-mobile"><a href="">Australia</a></li>
+                            <li><img src="./image/flag/Bahamas.png" alt=""><a href="">Bahamas</a></li>
+                            <li><img src="./image/flag/Bahrain.png" alt=""><a href="">Bahrain</a></li>
+                            <li><img src="./image/flag/Barbados.png" alt=""><a href="">Barbados</a></li>
+                            <li><img src="./image/flag/Basque-Country.png" alt=""><a href="">Basque-Country</a></li>
+                            <li><img src="./image/flag/Belarus.png" alt=""><a href="">Belarus</a></li>
+                            <li><img src="./image/flag/Belgium.png" alt=""><a href="">Belgium</a></li>
+                            <li><img src="./image/flag/Brunei.png" alt=""><a href="">Brunei</a></li>
+                            <li><img src="./image/flag/Bulgaria.png" alt=""><a href="">Bulgaria</a></li>
+                            <li><img src="./image/flag/Burkina-Faso.png" alt=""><a href="">Burkina-Faso</a></li>
+                            <li><img src="./image/flag/Burundi.png" alt=""><a href="">Burundi</a></li>
+                            <li><img src="./image/flag/Cambodia.png" alt=""><a href="">Cambodia</a></li>
+                            <li><img src="./image/flag/Cameroon.png" alt=""><a href="">Cameroon</a></li>
+                            <li><img src="./image/flag/Canada.png" alt=""><a href="">Canada</a></li>
+                            <li><img src="./image/flag/Burkina-Faso.png" alt=""><a href="">Burkina-Faso</a></li>
+                            <li><img src="./image/flag/Burundi.png" alt=""><a href="">Burundi</a></li>
+                            <li><img src="./image/flag/Cambodia.png" alt=""><a href="">Cambodia</a></li>
+                            <li><img src="./image/flag/Cameroon.png" alt=""><a href="">Cameroon</a></li>
+                            <li><img src="./image/flag/Canada.png" alt=""><a href="">Canada</a></li>
+                            <li><img src="./image/flag/Burkina-Faso.png" alt=""><a href="">Burkina-Faso</a></li>
+                            <li><img src="./image/flag/Burundi.png" alt=""><a href="">Burundi</a></li>
+                            <li><img src="./image/flag/Cambodia.png" alt=""><a href="">Cambodia</a></li>
+                            <li><img src="./image/flag/Cameroon.png" alt=""><a href="">Cameroon</a></li>
+                            <li><img src="./image/flag/Canada.png" alt=""><a href="">Canada</a></li>
+                            <li><img src="./image/flag/Brunei.png" alt=""><a href="">Brunei</a></li>
+                            <li><img src="./image/flag/Bulgaria.png" alt=""><a href="">Bulgaria</a></li>
+                            <li><img src="./image/flag/Burkina-Faso.png" alt=""><a href="">Burkina-Faso</a></li>
+                            <li><img src="./image/flag/Burundi.png" alt=""><a href="">Burundi</a></li>
+                            <li><img src="./image/flag/Cambodia.png" alt=""><a href="">Cambodia</a></li>
+                            <li><img src="./image/flag/Cameroon.png" alt=""><a href="">Cameroon</a></li>
+                            <li><img src="./image/flag/Canada.png" alt=""><a href="">Canada</a></li>
+                            <li><img src="./image/flag/Burkina-Faso.png" alt=""><a href="">Burkina-Faso</a></li>
+                            <li><img src="./image/flag/Burundi.png" alt=""><a href="">Burundi</a></li>
+                            <li><img src="./image/flag/Cambodia.png" alt=""><a href="">Cambodia</a></li>
+                            <li><img src="./image/flag/Cameroon.png" alt=""><a href="">Cameroon</a></li>
+                            <li><img src="./image/flag/Canada.png" alt=""><a href="">Canada</a></li>
+                            <li><img src="./image/flag/Burkina-Faso.png" alt=""><a href="">Burkina-Faso</a></li>
+                            <li><img src="./image/flag/Burundi.png" alt=""><a href="">Burundi</a></li>
+                            <li><img src="./image/flag/Cambodia.png" alt=""><a href="">Cambodia</a></li>
+                            <li><img src="./image/flag/Cameroon.png" alt=""><a href="">Cameroon</a></li>
+                            <li><img src="./image/flag/Canada.png" alt=""><a href="">Canada</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="right_baner_action">
+                    <img src="./image/img1.png" alt="foto">
+                    <h3>При покупке кроватки Baby Italia, получите подарок - матрас!</h3>
+                    <p>Наш интернет-магазин всегда готов предоставить Вам широкий ассортимент любых моделей детских колясок, детских ...</p>
+                    <a href="#">Подробнее...</a>
+                </div>
+                <div class="right_baner_seil">
+                	<img src="./image/pram1.png" alt="pram">
+                    <h4>Детская коляска Expander Mondo Ecco 2 в 1</h4>
+                    <p>Наш интернет-магазин всегда готов предоставить Вам широкий </p>
+                    <a href="#">Подробнее...</a>
+                </div>
             </div>
-        </footer>
-        <!-- FOOTER EOF   -->
+        </main> 
     </div>
-    <div class="icon-load"></div>
-    <!-- BODY EOF   -->
-    <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="js/jquery-migrate.min.js"></script>
-    <script type="text/javascript" src="js/slick.js"></script>
-    <script type="text/javascript" src="js/custom.js"></script>
+            
+<div class="clearfix"></div>
+
+<footer>
+	<div class="wrapper">
+		<div class="mobil_links">
+			<a href="#">Информация</a>
+			<a href="#">Контакты</a>
+		</div>
+		<div class="footer_navigation">
+			<ul class="footer_block">
+				<li><a href="#">Главная</a></li>
+				<li><a href="#">Статьи</a></li>
+				<li><a href="#">Акции и скидки</a></li>
+				<li><a href="#">Шоу-рум</a></li>
+			</ul>
+			<ul class="footer_block">
+				<li><a href="#">Гарантия и возврат</a></li>
+				<li><a href="#">Сборка мебели</a></li>
+				<li><a href="#">Все о поставке</a></li>
+				<li><a href="#">Контакты</a></li>
+			</ul>
+			<div class="footer_adressa footer_block"><p>pАдрес: <br>109052 Москва <br> ул. Подъемная д.14 стр 37</p></div>
+			<div class="footer_time footer_block">
+				<p>Работаем: <br>Пн-пт 9:00-20:00. <br>Сб-Вс 10:00-19:00. Без вых. </p>
+			</div>
+			<div class="footer_media footer_block"></div>
+			<div class="footer_social footer_block">
+				<p>E-mail: <br>info@koliaski-krovatki.ru</p>
+				<ul>
+		            <li>
+		                <a href="#"></a>
+		            </li>
+		            <li>
+		                <a class="link_in" href="#"></a>
+		            </li>
+		            <li>
+		                <a class="link_od" href="#"></a>
+		            </li>
+		            <li>
+		                <a class="link_f" href="#"></a>
+		            </li>
+		        </ul>
+			</div>
+			<div class="footer_phone footer_block">
+				<p><span>8-800-777-56-76</span> Бесплатный по РФ/p>
+				<p><span>+7-495-640-56-76</span> Москва </p>
+				<p><span>+7-812-409-45-01</span>  Санкт-Петербург</p>
+				<p><span>+7-343-386-18-80</span>  Екатеринбург</p>
+				<a class="footer_order" href="#">заказать звонок</a>
+			</div>
+		</div>
+	</div>
+	<div class="bottom_line">
+		<div class="wrapper">
+			<div class="footer_logo">
+				<a href="#">
+					<img src="./image/footer_logo.png" alt="foooter_logo">
+				</a>
+			</div>
+			<div class="footer_ref"><img src="./image/footer_image.png" alt="footer_img"></div>
+			<p>Copyright © 2016 Ваша первая покупка</p>
+		</div>
+	</div>	
+</footer>
+</div>		
+
+
+
+
+    <script src="script/jquery-2.2.3.min.js"></script>
+    <script src="script/jquery-migrate.min.js"></script>
+    <script src="script/custom.js"></script>
+    <script src="script/slick.min.js"></script>
+    <script src="script/main.js"></script>
 </body>
 
 </html>
