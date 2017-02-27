@@ -1081,3 +1081,8 @@ footer {
     display: inline-block;
     margin-top: 15px;
     margin-bottom: 15px; } }
+
+    .slider_products .text_box:after { display: none; }
+    .title_slider:after { display: none; }
+     .title_slider:before { display: none; }
+     .text_box span { margin-left: 10px; }
