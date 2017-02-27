@@ -74,12 +74,15 @@ var w = $(window).width();
 
 
     $('.name_categori').click(function() {
-        $(this).next('ul').slideToggle(300)
+        $(this).next('ul,img,p,div,a').slideToggle(300)
     });
     $('.sidebar_title').click(function() {
         $('.ac-container').slideToggle(300)
     });
     $('.title_filter').click(function() {
         $('.mobi_filter ul').slideToggle(300)
+    });
+    $('.brends_title').click(function() {
+        $('.filter_table').slideToggle(300)
     });
 });
