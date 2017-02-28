@@ -597,23 +597,62 @@ nav {
 
 /* Slider */
 body .slider-nav {
-  height: 230px;
-  float: right;
-  top: 90px;
-  right: -25px;
+  height: 59px;
+  float: none;
+  -ms-transform: rotate(90deg);
+      transform: rotate(90deg);
+  width: 259px;
+  top: 160px;
+  right: -110px;
+  padding: 20px;
   position: absolute;
   overflow: hidden;
   z-index: 100; }
   body .slider-nav .slick-slide {
-    float: none;
+    float: left;
     width: 39px !important;
     height: 40px !important;
-    border: 1px solid #eaeaea;
-    margin-bottom: 7px;
+    margin-left: 7px;
     box-sizing: border-box;
     cursor: pointer; }
     body .slider-nav .slick-slide img {
+      -ms-transform: rotate(-90deg);
+          transform: rotate(-90deg);
       width: 100% !important; }
+  body .slider-nav .slick-prev {
+    left: -5px;
+    -ms-transform: rotate(-90deg);
+        transform: rotate(-90deg);
+    top: 27px;
+    background: #fff; }
+    body .slider-nav .slick-prev:before {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 10px;
+      height: 12px;
+      background-image: url(../image/arow3.png);
+      background-size: 100%;
+      background-repeat: no-repeat; }
+    body .slider-nav .slick-prev:hover:before {
+      background-image: url(../image/arow2.png); }
+  body .slider-nav .slick-next {
+    right: -6px;
+    top: 34px;
+    -ms-transform: rotate(-90deg);
+    transform: rotate(90deg);
+    background: #fff; }
+    body .slider-nav .slick-next:before {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 10px;
+      height: 12px;
+      background-image: url(../image/arow3.png);
+      background-size: 100%;
+      background-repeat: no-repeat; }
+    body .slider-nav .slick-next:hover:before {
+      background-image: url(../image/arow2.png); }
 
 body .slider_tovar .product-container {
   margin: -4px 60px 19px 25px !important; }
@@ -860,7 +899,8 @@ body .slider_tovar .product-container {
   background-repeat: no-repeat;
   background-position: 0 -41px; }
 
-.main_menu .toggle_btn {
+.main_menu .toggle_btn,
+.resiz {
   display: none; }
 
 @media screen and (max-width: 1890px) {
@@ -946,11 +986,27 @@ body .slider_tovar .product-container {
     position: relative;
     width: 225px; }
   .right_sidebar {
-    width: 225px; } }
+    width: 225px; }
+  footer {
+    background-position: top !important; }
+  .resiz {
+    display: block; }
+  .footer_time {
+    display: none; }
+  .footer_adressa p {
+    line-height: 23px !important; } }
 
 @media screen and (max-width: 1140px) {
   .inner_media {
     width: 425px; }
+  body .slider-nav {
+    height: 59px;
+    float: none;
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    width: 222px;
+    top: 142px;
+    right: -99px; }
   .list_prams .items {
     width: 206px; }
   .general_text h3 {
@@ -958,8 +1014,6 @@ body .slider_tovar .product-container {
     line-height: 23px;
     font-family: ArialRoundedMTProCyr-Bold;
     font-size: 16px; }
-  body .slider-nav {
-    height: 135px; }
   .list_prams .items {
     margin-right: 6px; }
   .list_prams .img_inner {
@@ -1181,7 +1235,15 @@ body .slider_tovar .product-container {
     display: none; }
   .slider_text .baner_title,
   .slider_text p {
-    padding-left: 40px; } }
+    padding-left: 40px; }
+  .ac-container ul {
+    border: 1px dashed #acddf3;
+    border-radius: 10px;
+    margin: 10px 0;
+    overflow: hidden; }
+    .ac-container ul a {
+      background: #fff;
+      border-bottom: 1px dashed #acddf3; } }
 
 /*
 ================================================================================
@@ -1290,22 +1352,29 @@ body .slider_tovar .product-container {
     border-bottom: 1px solid #dfedf4;
     position: relative;
     cursor: pointer; }
-    .brends .brends_title:after {
+  .brends span {
+    display: block;
+    position: relative; }
+    .brends span:after {
       content: '';
       display: block;
       position: absolute;
-      top: 25px;
-      right: 33px;
-      width: 6px;
-      height: 11px;
+      top: -15px;
+      right: 55px;
+      width: 11px;
+      height: 10px;
       -ms-transform: rotate(180deg);
       transform: rotate(180deg);
       background: url(../image/arow2.png);
-      -ms-transform: rotate(54deg);
-      transform: rotate(-90deg);
       background-position: 0 0;
       background-size: 100%;
       background-repeat: no-repeat; }
+  .brends .transform {
+    -ms-transform: rotate(180deg);
+        transform: rotate(180deg); }
+    .brends .transform:after {
+      top: 2px;
+      right: 156px; }
 
 .filter_table {
   display: none;

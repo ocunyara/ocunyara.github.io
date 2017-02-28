@@ -139,4 +139,33 @@ $(document).ready(function() {
         });
 
     })
+
+
+    //  function sendform() {
+    //     var form = $('#form1');
+    //     if ($('.form_input2').val('')) {
+    //         console.log('false');
+    //         alert( "Привет" );
+    //         $('.btn_download').disabled = false;
+    //     } else {
+    //         console.log('true');
+    //         alert( "Привет мой свет" );
+    //         $('.btn_download').disabled = true;
+    //     }
+    // }
+
+    $(function() {
+       $('.btn_download').on('click', sendform());
+    })
+
+
+        // if (document.form[0].name.value == “”)||(document.forms[0].email.value == “”) {
+        //     alert (введите ваше имя и телефон”);
+        //     document.mailform.name.focus();
+        //     $('btn_download').css()
+        //     return false
+        // }
+
+        // return true;
+        // }
 });
