@@ -66,11 +66,11 @@ $(document).ready(function() {
 
     var ravenous = function() {
         if (window.matchMedia('(max-width: 992px)').matches) {
-            $('nav').click(function(){
-                $('nav ul').toggle();
+            $('toggle_btn').click(function(){
+                $('.main_menu ul').slideToggle(300);
             });
         } else if (window.matchMedia('(min-width: 992px)').matches) {
-            $('nav ul').show(); 
+            $('.main_menu ul').show(); 
         }
     };
 

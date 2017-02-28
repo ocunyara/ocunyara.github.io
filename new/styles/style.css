@@ -389,7 +389,7 @@ nav {
     position: relative; }
     .slider_products .text_box:after {
       content: '';
-      display: block;
+      display: none;
       position: absolute;
       bottom: -30px;
       left: 0;
@@ -478,6 +478,9 @@ nav {
       font-size: 15px;
       color: #fff; }
 
+.board_paver img {
+  width: 100% !important; }
+
 .btn_download {
   position: relative;
   z-index: 50;
@@ -502,7 +505,7 @@ nav {
   position: relative; }
   .title_slider:after {
     content: '';
-    display: block;
+    display: none;
     position: absolute;
     top: -34px;
     left: 0;
@@ -511,7 +514,7 @@ nav {
     background: #fff; }
   .title_slider:before {
     content: '';
-    display: block;
+    display: none;
     position: absolute;
     bottom: -34px;
     left: 0;
@@ -764,6 +767,7 @@ footer {
     pointer-events: none; }
 
 .footer_text {
+  display: block;
   padding: 43px 0;
   text-align: center;
   font-family: ProximaNova-Bold;
@@ -1081,8 +1085,3 @@ footer {
     display: inline-block;
     margin-top: 15px;
     margin-bottom: 15px; } }
-
-    .slider_products .text_box:after { display: none; }
-    .title_slider:after { display: none; }
-     .title_slider:before { display: none; }
-     .text_box span { margin-left: 10px; }
