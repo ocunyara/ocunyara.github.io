@@ -791,6 +791,40 @@ body .slider_tovar .product-container {
 
 .mobi_categori {
   display: none; }
+  .mobi_categori .mob_slider_popular {
+    margin: 0 25px; }
+    .mobi_categori .mob_slider_popular .slick-prev,
+    .mobi_categori .mob_slider_popular .slick-next {
+      background: #fff;
+      background-image: url(../image/arrow_slider.png); }
+    .mobi_categori .mob_slider_popular .slick-prev:before,
+    .mobi_categori .mob_slider_popular .slick-next:before {
+      content: '';
+      background: #fff; }
+    .mobi_categori .mob_slider_popular .slick-prev {
+      left: -10px; }
+    .mobi_categori .mob_slider_popular .slick-next {
+      right: -10px;
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg); }
+  .mobi_categori .mob_slider_popular2 {
+    margin: 0 25px; }
+    .mobi_categori .mob_slider_popular2 .slick-prev,
+    .mobi_categori .mob_slider_popular2 .slick-next {
+      background: #fff;
+      background-image: url(../image/arrow_slider.png); }
+    .mobi_categori .mob_slider_popular2 .slick-prev:before,
+    .mobi_categori .mob_slider_popular2 .slick-next:before {
+      content: '';
+      background: #fff; }
+    .mobi_categori .mob_slider_popular2 .slick-prev {
+      left: -10px; }
+    .mobi_categori .mob_slider_popular2 .slick-next {
+      right: -10px;
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg); }
+  .mobi_categori .right_baner_seil {
+    margin: 10px 30px; }
   .mobi_categori .title_categori {
     margin-bottom: 6px;
     line-height: 50px;
@@ -824,6 +858,7 @@ body .slider_tovar .product-container {
     padding: 25px 20px;
     border-bottom: 1px solid #ebebeb; }
   .mobi_categori .categori_list a {
+    width: 250px;
     line-height: 20px;
     font-family: Roboto-Bold;
     font-size: 14px;
@@ -856,6 +891,23 @@ body .slider_tovar .product-container {
     background-position: 0 -150px !important; }
   .mobi_categori .categori_list .social_blocks.social_vk {
     background-position: 0 -225px !important; }
+  .mobi_categori .categori_list_j {
+    display: block !important; }
+    .mobi_categori .categori_list_j li {
+      padding: 0; }
+    .mobi_categori .categori_list_j a {
+      line-height: 40px;
+      background: #fff;
+      color: #0d6e9f;
+      font-size: 14px;
+      font-family: Roboto-Regular;
+      border-bottom: #ebebeb;
+      padding-left: 20px; }
+
+.mob_btn {
+  margin: 0 auto;
+  width: 250px;
+  display: block; }
 
 .categori_list .link_block {
   width: 100%;
@@ -1224,7 +1276,7 @@ body .slider_tovar .product-container {
   .mobi_filter {
     display: block; }
   .mobi_categori {
-    display: block; }
+    display: block !important; }
   .ac-container {
     display: none; }
   .sidebar_title:after {

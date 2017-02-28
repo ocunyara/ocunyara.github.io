@@ -3,6 +3,14 @@ $(document).ready(function() {
         dots: true,
         arrows: false
     })
+  $('.mob_slider_popular').slick({
+        dots: false,
+        arrows: true
+    })
+  $('.mob_slider_popular2').slick({
+        dots: false,
+        arrows: true
+    })
 
 
 
