@@ -729,7 +729,7 @@ body .slider_tovar .product-container {
 .mobi_filter {
   display: none; }
   .mobi_filter .title_filter {
-    padding-top: 2px;
+    padding-top: 3px;
     margin-top: 15px;
     margin-bottom: 10px;
     line-height: 50px;
@@ -825,6 +825,7 @@ body .slider_tovar .product-container {
   .mobi_categori .right_baner_seil {
     margin: 10px 30px; }
   .mobi_categori .title_categori {
+    padding-top: 3px;
     margin-bottom: 6px;
     line-height: 50px;
     text-align: center;
@@ -836,7 +837,7 @@ body .slider_tovar .product-container {
     cursor: pointer;
     background: linear-gradient(#ff62ba 0%, #ff2ea2 100%); }
   .mobi_categori .name_categori {
-    padding-top: 2px;
+    padding-top: 3px;
     margin-bottom: 6px;
     line-height: 50px;
     text-align: left;
@@ -1254,6 +1255,7 @@ body .slider_tovar .product-container {
     width: 100%;
     position: relative; }
   body .sidebar_title {
+    padding-top: 3px;
     cursor: pointer;
     margin-top: 15px;
     line-height: 50px;
