@@ -1282,7 +1282,8 @@ body .slider_tovar .product-container {
     position: absolute;
     margin: 0;
     bottom: 33px;
-    left: 30%; }
+    left: 50%;
+    margin-left: -97px; }
   .slider_text .baner_title {
     font-size: 25px;
     line-height: 30px; }
@@ -1338,7 +1339,13 @@ body .slider_tovar .product-container {
       background: #fff;
       border-bottom: 1px dashed #acddf3; }
   .ac-container article li:last-child a {
-    border-bottom: 0; } }
+    border-bottom: 0; }
+  .slider_text {
+    padding: 0 60px; } }
+
+@media screen and (max-width: 360px) {
+  .slider_text {
+    padding: 0 30px; } }
 
 .cart_tovar {
   padding: 0 15px;
