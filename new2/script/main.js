@@ -110,7 +110,7 @@ $(document).ready(function() {
         $('.filter_table').slideToggle(300);
         $('.brends_title>span').toggleClass('transform');
     });
-    $('.inner_filter').click(function() {
-        $(this).next('.block_tavar').slideToggle(300);
+    $('.title_filter').click(function() {
+        $(this).next('.filter_table').slideToggle(300);
     });
 });
