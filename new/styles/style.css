@@ -982,7 +982,7 @@ footer {
     padding-top: 10px; }
   .advantages_box li {
     display: inline-block;
-    width: 49%;
+    width: 100%;
     margin-top: 85px;
     padding: 0 5px; }
     .advantages_box li:after {
@@ -1008,9 +1008,9 @@ footer {
       display: block;
       padding: 20px 0px 20px 0px; }
     .contacts li {
-      margin-top: 30%;
+      margin-top: 25%;
       display: inline-block;
-      width: 49%;
+      width: 100%;
       font-size: 14px;
       list-style: 15px; }
   .title_products {
