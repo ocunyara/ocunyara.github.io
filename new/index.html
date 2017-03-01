@@ -17,6 +17,7 @@
                 <a href="#"><img src="./image/logo.png" alt="logotip"></a>
             </div>
             <nav data-before="after">
+                <div class="toggle_btn"></div>
                 <ul>
                     <!--                <li><a href="#link1">Оставить заявку</a></li> -->
                     <li><a href="#link2">Товары</a></li>
@@ -38,10 +39,11 @@
                     А вы знаете как сэкономить <br>на блоках питания до 50%?
                 </h3>
                 </div>
-                <form id="form1" action="mail.php">
-                    <input class="form_input required"  name="name" type="text" placeholder="Имя" required>
-                    <input class="form_input required" name="phone" type="text" placeholder="Телефон" required>
+                <form id="form1" method="post" action="mail.php">
+                    <input id="name" class="form_input required"  name="name" type="text" placeholder="Имя" >
+                    <input id="phone" class="form_input required" name="phone" type="text" placeholder="Телефон" >
                     <input type="submit" id='btn' class="form_submit btn_link" value="скачать инструкцию">
+                    <a id='btn_download2' href="PRAJS_Glashatay_2017_roznitsa_28_02.xls" download=""></a>
                 </form>
                 <div id="post_form_success"></div>
             </div>
@@ -520,7 +522,7 @@
                         </div>
                     </div>
                 </div>
-                <a class="btn_download form_submit" href="PRAJS_Glashatay_2017_roznitsa_28_02.xls" download="PRAJS_Glashatay_2017_roznitsa_28_02.xls">Скачать Каталог</a>
+                <a class="btn_download form_submit" href="PRAJS_Glashatay_2017_roznitsa_28_02.xls" download>Скачать Каталог</a>
             </div>
         </div>
     </section>
@@ -589,9 +591,9 @@
                 <div class="promo_text">Как приобрести нашу продукцию?</div>
                 <div class="title_aplcation">
                     <h2>Узнайте подробности у менеджера</h2></div>
-                <form>
-                    <input class="form_input" type="text" placeholder="Имя">
-                    <input class="form_input" type="text" placeholder="Телефон">
+                <form id='form2' method="post" action="mail.php">
+                    <input class="form_input" name="name" placeholder="Имя">
+                    <input class="form_input" name="phone" placeholder="Телефон">
                     <input class="form_submit" type="submit" value="Отправить">
                 </form>
             </div>
@@ -637,11 +639,11 @@
                 <div id="googleMap"></div>
             </div>
             <div class="form_question">
-                <form>
-                    <input class="form_input" type="text" placeholder="Адресс">
-                    <input class="form_input input_phone" type="text" placeholder="Телефон">
-                    <input class="form_input form_email" type="text" placeholder="E-mail">
-                    <textarea class="form_textarea" placeholder="Сообщение"></textarea>
+                <form id="form3" method="post" action="mail.php">
+                    <input class="form_input" name="address" placeholder="Адресс">
+                    <input class="form_input input_phone" name="phone" placeholder="Телефон">
+                    <input class="form_input form_email" name="mail" placeholder="E-mail">
+                    <textarea class="form_textarea" name="text" placeholder="Сообщение"></textarea>
                     <input class="form_submit" type="submit" value="получить ответы">
                 </form>
             </div>
@@ -651,7 +653,6 @@
     </footer>
     <script src="script/jquery-2.2.3.min.js"></script>
     <script src="script/jquery-migrate.min.js"></script>
-    <script src="script/common.js"></script>
 <!--     <script src="script/validate.js"></script> -->
     <script src="script/slick.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA7FoxFUQcy-RqgiDxfD51FIdKMCtIanrw" type="text/javascript"></script>

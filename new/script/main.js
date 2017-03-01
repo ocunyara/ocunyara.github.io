@@ -64,18 +64,22 @@ $(document).ready(function() {
         $('body,html').animate({ scrollTop: top }, 1000);
     });
 
+
+            $('.toggle_btn').click(function() {
+                $('nav ul').slideToggle(300);
+            });
+
+
     var ravenous = function() {
         if (window.matchMedia('(max-width: 992px)').matches) {
-            $('toggle_btn').click(function() {
-                $('.main_menu ul').slideToggle(300);
-            });
+
         } else if (window.matchMedia('(min-width: 992px)').matches) {
-            $('.main_menu ul').show();
+            $('nav ul').show();
         }
     };
 
-
-
+    $(window).resize(ravenous);
+    ravenous();
 
     var nav = $('header');
     var height = $('header').height();
@@ -91,9 +95,6 @@ $(document).ready(function() {
     });
 
 
-    $(window).resize(ravenous);
-    // Call the function
-    ravenous();
 
     function initialize() {
         var styles = [{ "featureType": "landscape", "stylers": [{ "hue": "#FFBB00" }, { "saturation": 43.400000000000006 }, { "lightness": 37.599999999999994 }, { "gamma": 1 }] }, { "featureType": "road.highway", "stylers": [{ "hue": "#FFC200" }, { "saturation": -61.8 }, { "lightness": 45.599999999999994 }, { "gamma": 1 }] }, { "featureType": "road.arterial", "stylers": [{ "hue": "#FF0300" }, { "saturation": -100 }, { "lightness": 51.19999999999999 }, { "gamma": 1 }] }, { "featureType": "road.local", "stylers": [{ "hue": "#FF0300" }, { "saturation": -100 }, { "lightness": 52 }, { "gamma": 1 }] }, { "featureType": "water", "stylers": [{ "hue": "#0078FF" }, { "saturation": -13.200000000000003 }, { "lightness": 2.4000000000000057 }, { "gamma": 1 }] }, { "featureType": "poi", "stylers": [{ "hue": "#00FF6A" }, { "saturation": -1.0989010989011234 }, { "lightness": 11.200000000000017 }, { "gamma": 1 }] }]
@@ -126,85 +127,68 @@ $(document).ready(function() {
 
 
 
-// $(document).ready(function(){
-//     $("#form1").submit(function() {
-//         var form_data = $(this).serialize();
-//         $.ajax({
-//         type: "POST",
-//         url: "mail.php",
-//         data: form_data,
-//         success: function() {
-//                alert("Ваше сообщение отпрвлено!");
-//         } // забыли закрыть success
-//       });
-//     });
-// });
+    $("#form1").submit(function(e) {
+        e.preventDefault();
+        $('#btn').attr('disabled', false);
 
-//  $("#form1").validate({
-//   rules: {
-//     name: {  // поле, для которого задается правило
-//       required: true, // обязательно для заполнения
-//       minlength: 4, // минимальная длина
-//       maxlength: 30 // максимальная длина
-//     },
-//     phone: { // поле, для которого задается правило
-//       required: true, // обязательно для заполнения
-//       minlength: 4, // минимальная длина
-//       maxlength: 30 // максимальная длина
-//     }
-//   }
-// });
-
-
-    // $("form").change(function () {
-    //     var activeCount = $(".active-fieldset .necessarily.success-view").length;
-    //     var allCount = $(".active-fieldset .necessarily").length;
-    //     var btnNext = $(".active-fieldset .btn_next")
-    //     if (activeCount == allCount) {
-    //         btnNext.addClass('active');
-    //     } else {
-    //         btnNext.removeClass('active');
-    //     }
-    //       var successCount = $(".necessarily.success-view").length;
-    //     var percent = 100 * successCount / inputCount;
-    //     $(".percent").css("width", percent + '%');
-
-    // });
-    // $("form").change();
-
-    $("#form").change(function () {
-        var activeCount = $(".error").length;
-        if(activeCount === 0) {
-            $('.btn_download').css('pointer-events','auto');
-        } else {
-            $('.btn_download').css('pointer-events','none');
-        }
-    });
-    $("form").change();
-});
-$(document).ready(function () {
-        $("#form1").submit(function () { //устанавливаем событие отправки для формы с id=form
-            var form_data = $(this).serialize(); //собераем все данные из формы
+        if ($('#name').val() !== '' && $('#phone').val() !== '') {
+            var form_data = $(this).serialize();
             $.ajax({
-                type: "POST", //Метод отправки
-                url: "mail.php", //путь до php фаила отправителя
-                data: form_data,
-                success: function () {
-                    //код в этом блоке выполняется при успешной отправке сообщения
-                    alert("Ваше сообщение отпрвлено!");
-                },
-                error: function (xhr, str) {
-                    alert('Возникла ошибка: ' + xhr.responseCode);
+            type: "POST",
+            url: "mail.php",
+            data: form_data,
+            success: function() {
+                   alert("Ваше сообщение отпрвлено!");
+            } 
+          });
 
-                }
-            });
+            $('.btn_download').attr('disabled', false);
+
+            $('.btn_download').css('pointer-events', 'auto');
+        } else {
+            $('#btn').attr('disabled', true);
+            $('.btn_download').css('pointer-events', 'none');
+        }
+        
+    });
+    $('#btn').click( function() {
+        $('#btn_download').click();
+    });
+
+    $('#name').keypress(function() {
+        $('#btn').attr('disabled', false);
+    });
+
+    
+     $('#phone').keypress(function() {
+        $('#btn').attr('disabled', false);
+    });
+
+    $("#form2").submit(function(e) {
+        e.preventDefault();
+            var form_data = $(this).serialize();
+            $.ajax({
+            type: "POST",
+            url: "mail.php",
+            data: form_data,
+            success: function() {
+                alert("Ваше сообщение отпрвлено!");
+            } 
         });
     });
 
-$(document).ready(function () {
-        $("#form").submit(function () {
-            console.log("Send");
-            return false;
+    $("#form3").submit(function(e) {
+        e.preventDefault();
+            var form_data = $(this).serialize();
+            $.ajax({
+            type: "POST",
+            url: "mail.php",
+            data: form_data,
+            success: function() {
+                alert("Ваше сообщение отпрвлено!");
+            } 
         });
     });
+});
+
 
