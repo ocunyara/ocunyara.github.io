@@ -53,7 +53,7 @@ $(document).ready(function() {
     $('.slider_products').slick();
     $('.slider_reviews').slick({
         dots: true
-    }) 
+    })
 
 
 
@@ -66,20 +66,20 @@ $(document).ready(function() {
 
     var ravenous = function() {
         if (window.matchMedia('(max-width: 992px)').matches) {
-            $('toggle_btn').click(function(){
+            $('toggle_btn').click(function() {
                 $('.main_menu ul').slideToggle(300);
             });
         } else if (window.matchMedia('(min-width: 992px)').matches) {
-            $('.main_menu ul').show(); 
+            $('.main_menu ul').show();
         }
     };
 
- 
+
 
 
     var nav = $('header');
     var height = $('header').height();
-    $(window).scroll(function () {
+    $(window).scroll(function() {
         if ($(this).scrollTop() > 0) {
             nav.addClass("f-nav");
         } else {
@@ -91,12 +91,12 @@ $(document).ready(function() {
     });
 
 
-      $(window).resize(ravenous);
-      // Call the function
-      ravenous(); 
+    $(window).resize(ravenous);
+    // Call the function
+    ravenous();
 
-      function initialize() {
-        var styles = [{"featureType":"landscape","stylers":[{"hue":"#FFBB00"},{"saturation":43.400000000000006},{"lightness":37.599999999999994},{"gamma":1}]},{"featureType":"road.highway","stylers":[{"hue":"#FFC200"},{"saturation":-61.8},{"lightness":45.599999999999994},{"gamma":1}]},{"featureType":"road.arterial","stylers":[{"hue":"#FF0300"},{"saturation":-100},{"lightness":51.19999999999999},{"gamma":1}]},{"featureType":"road.local","stylers":[{"hue":"#FF0300"},{"saturation":-100},{"lightness":52},{"gamma":1}]},{"featureType":"water","stylers":[{"hue":"#0078FF"},{"saturation":-13.200000000000003},{"lightness":2.4000000000000057},{"gamma":1}]},{"featureType":"poi","stylers":[{"hue":"#00FF6A"},{"saturation":-1.0989010989011234},{"lightness":11.200000000000017},{"gamma":1}]}]
+    function initialize() {
+        var styles = [{ "featureType": "landscape", "stylers": [{ "hue": "#FFBB00" }, { "saturation": 43.400000000000006 }, { "lightness": 37.599999999999994 }, { "gamma": 1 }] }, { "featureType": "road.highway", "stylers": [{ "hue": "#FFC200" }, { "saturation": -61.8 }, { "lightness": 45.599999999999994 }, { "gamma": 1 }] }, { "featureType": "road.arterial", "stylers": [{ "hue": "#FF0300" }, { "saturation": -100 }, { "lightness": 51.19999999999999 }, { "gamma": 1 }] }, { "featureType": "road.local", "stylers": [{ "hue": "#FF0300" }, { "saturation": -100 }, { "lightness": 52 }, { "gamma": 1 }] }, { "featureType": "water", "stylers": [{ "hue": "#0078FF" }, { "saturation": -13.200000000000003 }, { "lightness": 2.4000000000000057 }, { "gamma": 1 }] }, { "featureType": "poi", "stylers": [{ "hue": "#00FF6A" }, { "saturation": -1.0989010989011234 }, { "lightness": 11.200000000000017 }, { "gamma": 1 }] }]
         var mapProp = {
             center: new google.maps.LatLng(53.35029835, 83.67791265),
             zoom: 17,
@@ -117,7 +117,7 @@ $(document).ready(function() {
             draggable: false,
             icon: image,
             animation: google.maps.Animation.DROP,
-            position: { lat: 53.35029835, lng: 83.67791265}
+            position: { lat: 53.35029835, lng: 83.67791265 }
 
         });
 
@@ -126,46 +126,85 @@ $(document).ready(function() {
 
 
 
-     $("#form1, #form2, #form3").submit(function() { //устанавливаем событие отправки для формы с id=form
+// $(document).ready(function(){
+//     $("#form1").submit(function() {
+//         var form_data = $(this).serialize();
+//         $.ajax({
+//         type: "POST",
+//         url: "mail.php",
+//         data: form_data,
+//         success: function() {
+//                alert("Ваше сообщение отпрвлено!");
+//         } // забыли закрыть success
+//       });
+//     });
+// });
+
+//  $("#form1").validate({
+//   rules: {
+//     name: {  // поле, для которого задается правило
+//       required: true, // обязательно для заполнения
+//       minlength: 4, // минимальная длина
+//       maxlength: 30 // максимальная длина
+//     },
+//     phone: { // поле, для которого задается правило
+//       required: true, // обязательно для заполнения
+//       minlength: 4, // минимальная длина
+//       maxlength: 30 // максимальная длина
+//     }
+//   }
+// });
+
+
+    // $("form").change(function () {
+    //     var activeCount = $(".active-fieldset .necessarily.success-view").length;
+    //     var allCount = $(".active-fieldset .necessarily").length;
+    //     var btnNext = $(".active-fieldset .btn_next")
+    //     if (activeCount == allCount) {
+    //         btnNext.addClass('active');
+    //     } else {
+    //         btnNext.removeClass('active');
+    //     }
+    //       var successCount = $(".necessarily.success-view").length;
+    //     var percent = 100 * successCount / inputCount;
+    //     $(".percent").css("width", percent + '%');
+
+    // });
+    // $("form").change();
+
+    $("#form").change(function () {
+        var activeCount = $(".error").length;
+        if(activeCount === 0) {
+            $('.btn_download').css('pointer-events','auto');
+        } else {
+            $('.btn_download').css('pointer-events','none');
+        }
+    });
+    $("form").change();
+});
+$(document).ready(function () {
+        $("#form1").submit(function () { //устанавливаем событие отправки для формы с id=form
             var form_data = $(this).serialize(); //собераем все данные из формы
             $.ajax({
-            type: "POST", //Метод отправки
-            url: "mail.php", //путь до php фаила отправителя
-            data: form_data,
-            success: function() {
-                   //код в этом блоке выполняется при успешной отправке сообщения
-                   alert("Ваше сообщение отпрвлено!");
-            }
+                type: "POST", //Метод отправки
+                url: "mail.php", //путь до php фаила отправителя
+                data: form_data,
+                success: function () {
+                    //код в этом блоке выполняется при успешной отправке сообщения
+                    alert("Ваше сообщение отпрвлено!");
+                },
+                error: function (xhr, str) {
+                    alert('Возникла ошибка: ' + xhr.responseCode);
+
+                }
+            });
         });
+    });
 
-    })
+$(document).ready(function () {
+        $("#form").submit(function () {
+            console.log("Send");
+            return false;
+        });
+    });
 
-
-    //  function sendform() {
-    //     var form = $('#form1');
-    //     if ($('.form_input2').val('')) {
-    //         console.log('false');
-    //         alert( "Привет" );
-    //         $('.btn_download').disabled = false;
-    //     } else {
-    //         console.log('true');
-    //         alert( "Привет мой свет" );
-    //         $('.btn_download').disabled = true;
-    //     }
-    // }
-
-    $(function() {
-       $('.btn_download').on('click', sendform());
-    })
-
-
-        // if (document.form[0].name.value == “”)||(document.forms[0].email.value == “”) {
-        //     alert (введите ваше имя и телефон”);
-        //     document.mailform.name.focus();
-        //     $('btn_download').css()
-        //     return false
-        // }
-
-        // return true;
-        // }
-});

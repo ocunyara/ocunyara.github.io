@@ -1,18 +1,23 @@
-<?
-if((isset($_POST['name'])&&$_POST['name']!="")&&(isset($_POST['phone'])&&$_POST['phone']!="")){ //Проверка отправилось ли наше поля name и не пустые ли они
-        $to = 'smolin_an@mail.ua'; //Почта получателя, через запятую можно указать сколько угодно адресов
-        $subject = 'Обратный звонок'; //Загаловок сообщения
-        $message = '
-                <html>
-                    <head>
-                        <title>'.$subject.'</title>
-                    </head>
-                    <body>
-                        <p>Имя: '.$_POST['name'].'</p>
-                        <p>Телефон: '.$_POST['phone'].'</p>                        
-                    </body>
-                </html>'; //Текст нащего сообщения можно использовать HTML теги
-        $headers  = "Content-type: text/html; charset=utf-8 \r\n"; //Кодировка письма
-        mail($to, $subject, $message, $headers); //Отправка письма с помощью функции mail
+<?php
+if( ! empty($_POST) ) {
+
+    $data = (object) $_POST;
+
+    if( ! $data->name) return 'Поле "Имя" не заполнено.';
+    if( ! $data->phone) return 'Поле "телефон" не заполнено.';
+
+    $to = 'smolin_an@mail.ua';
+    $subject = 'Обратный звонок';
+    $message = 'Имя ' . $data->name . '. Телефон ' . $data->phone;
+
+    $headers  = "Content-type: text/html; charset=utf-8 \r\n";
+    $headers .= "From: Отправитель <from@example.com>\r\n";
+
+
+    mail($to, $subject, $message, $headers);
+
+    return 'Скрипт завершил свою работу.';
+
+} else {
+    return 'Форма пустая.';
 }
-?>
