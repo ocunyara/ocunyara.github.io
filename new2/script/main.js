@@ -34,8 +34,7 @@ $(document).ready(function() {
           dots: false,
           arrows: true,
           infinite: true,
-          centerMode: true,
-          focusOnSelect: true
+          centerMode: true
     });
 
     //
@@ -113,4 +112,27 @@ $(document).ready(function() {
     $('.title_filter').click(function() {
         $(this).next('.filter_table').slideToggle(300);
     });
+
+    var select = function() {
+      $('.selectbox .text').click( function() {
+        $(this).next('.dropdown').slideToggle(300);
+      });
+      $('.dropdown1 li').click( function() {
+        var selectedText = $(this).text();
+        console.log(selectedText);
+        $('#text1').empty();
+        $('#text1').append(selectedText);
+      });
+      $('.dropdown2 li').click( function() {
+        var selectedText = $(this).text();
+        console.log(selectedText);
+        $('#text2').empty();
+        $('#text2').append(selectedText);
+      })
+    };
+
+    select();
+
+
+
 });

@@ -405,11 +405,13 @@ nav {
 ================================================================================
 */
 .general_page {
-  float: left;
+  float: none;
   margin: 5px 48px 0 48px;
   padding: 0 15px;
   width: 67.2%;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0 15px; }
 
 .main_slider .slick-slide {
   position: relative; }
@@ -1353,7 +1355,7 @@ body .slider_tovar .product-container {
 
 .cart_tovar {
   padding: 0 15px;
-  width: 67.2%;
+  width: 65%;
   margin: 0 auto;
   box-sizing: border-box; }
 
@@ -1397,7 +1399,9 @@ body .slider_tovar .product-container {
     color: #006699; }
 
 .left_block {
-  width: 745px; }
+  margin-right: 25px;
+  float: left;
+  max-width: 665px; }
   .left_block .colour {
     font-family: Roboto-Bold;
     font-size: 14px;
@@ -1405,7 +1409,7 @@ body .slider_tovar .product-container {
     margin-bottom: 10px; }
 
 .cart_slider {
-  margin-top: 75px;
+  margin-top: 35px;
   margin-bottom: 25px;
   width: 100%;
   background: #fff; }
@@ -1439,15 +1443,181 @@ body .slider_tovar .product-container {
     background-image: url(../image/action_cont.png);
     background-repeat: no-repeat; }
 
-.cart_slider_list .list_block {
-  width: 90px;
+.cart_slider_list {
+  overflow: hidden;
+  padding: 0 5px;
   height: 125px; }
-  .cart_slider_list .list_block .block_img {
+  .cart_slider_list .slick-current .list_block {
+    border: 1px solid #ff0099; }
+  .cart_slider_list .slick-slide {
+    box-sizing: border-box; }
+  .cart_slider_list .list_block {
+    text-align: center;
+    background: #fff;
     width: 90px;
-    height: 93px;
-    border-bottom: 1px solid #f5f5f5; }
-  .cart_slider_list .list_block img {
-    width: 100%; }
+    height: 125px; }
+    .cart_slider_list .list_block:hover {
+      border: 1px solid #ff0099; }
+    .cart_slider_list .list_block .namber {
+      padding-top: 3px;
+      display: block;
+      font-family: Roboto-Light;
+      font-size: 14px;
+      color: #333333; }
+    .cart_slider_list .list_block .name {
+      font-family: Roboto-Light;
+      font-size: 11px;
+      color: #66cc33; }
+    .cart_slider_list .list_block .block_img {
+      width: 90px;
+      height: 93px;
+      border-bottom: 1px solid #f5f5f5; }
+    .cart_slider_list .list_block img {
+      width: 96%;
+      height: 100%; }
+
+.subright {
+  margin-top: 35px;
+  float: left;
+  box-sizing: border-box;
+  overflow: hidden; }
+  .subright p {
+    font-family: Roboto-Light;
+    font-size: 13px;
+    color: #999999; }
+    .subright p span {
+      font-family: Roboto-Light;
+      font-size: 13px;
+      color: #000; }
+    .subright p .flag {
+      position: relative; }
+      .subright p .flag:after {
+        content: '';
+        position: absolute;
+        display: block;
+        top: 3px;
+        right: -25px;
+        width: 16px;
+        height: 16px;
+        background: url(../image/flag/Armenia.png); }
+  .subright .manufacturer {
+    padding: 13px 0 18px 0; }
+  .subright .prise span {
+    font-family: Roboto-Light;
+    font-size: 13px;
+    color: #ff0099;
+    bottom: -3px;
+    position: relative; }
+  .subright .prise p {
+    font-family: Roboto-Medium;
+    font-size: 33px;
+    color: #ff0099; }
+  .subright .dropdown {
+    display: none; }
+    .subright .dropdown li {
+      list-style: none; }
+  .subright .filter {
+    margin-top: 15px;
+    float: left; }
+  .subright .filten_color {
+    margin-right: 35px; }
+  .subright .text {
+    width: 200px;
+    height: 30px;
+    background: #fff;
+    padding-left: 13px;
+    line-height: 30px;
+    font-family: Roboto-Light;
+    font-size: 14px;
+    color: #333;
+    position: relative; }
+    .subright .text:before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 6px;
+      right: 10px;
+      width: 10px;
+      height: 12px;
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+      background-image: url(../image/arow2.png);
+      background-size: 100%;
+      background-repeat: no-repeat; }
+  .subright .btn_acr {
+    width: 175px;
+    height: 40px;
+    display: block;
+    font-family: Roboto-Regular;
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 50px;
+    text-align: center;
+    padding-top: 13px;
+    margin-top: 30px;
+    margin-bottom: 35px; }
+  .subright .bet_arder {
+    background: linear-gradient(2deg, #ff2da2 0%, #ff61b9 100%);
+    float: left; }
+  .subright .bet_arder_one {
+    float: right;
+    background: linear-gradient(#85c7e2 0%, #57aed3 100%); }
+  .subright .order_call {
+    font-family: Roboto-Regular;
+    font-size: 14px;
+    color: #ff0099; }
+
+.present_cart {
+  margin-top: 38px;
+  padding: 13px;
+  width: 100%;
+  border: 1px dashed #7cb9d4;
+  position: relative;
+  box-sizing: border-box; }
+  .present_cart:after {
+    content: '';
+    position: absolute;
+    display: block;
+    top: -18px;
+    right: 17px;
+    width: 49px;
+    height: 29px;
+    background: url(../image/present.png); }
+  .present_cart span {
+    display: block;
+    padding-top: 5px;
+    font-family: Roboto-Light;
+    font-size: 13px;
+    color: #ff0099; }
+
+.carts_link {
+  float: right;
+  margin-top: -8px;
+  margin-right: 35px; }
+  .carts_link li {
+    list-style: none;
+    display: inline-block;
+    position: relative; }
+    .carts_link li:last-child:after {
+      content: '';
+      position: absolute;
+      display: block;
+      top: 0px;
+      right: -34px;
+      width: 30px;
+      height: 29px;
+      background: url(../image/carts_icon.png);
+      background-position: 29px 0; }
+  .carts_link a {
+    display: block;
+    width: 48px;
+    height: 28px;
+    background: url(../image/carts_icon.png); }
+  .carts_link .cart2 {
+    background-position: -49px 0; }
+  .carts_link .cart3 {
+    background-position: -93px 0; }
 
 /*
 ================================================================================
@@ -1457,7 +1627,10 @@ body .slider_tovar .product-container {
 .right_sidebar {
   width: 248px;
   float: right;
-  margin-top: 3px; }
+  margin-top: 3px;
+  position: absolute;
+  top: 0;
+  right: 0; }
 
 .right_links .link_block {
   width: 100%;
