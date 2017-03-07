@@ -1,15 +1,38 @@
 $(document).ready(function() {
-    $('.main_slider').slick({
-        dots: true,
-        arrows: false
-    })
-  $('.mob_slider_popular').slick({
+    $('.mob_slider_popular, .main_slider, .mob_slider_popular2').slick({
         dots: false,
         arrows: true
     })
-  $('.mob_slider_popular2').slick({
+    $('.slider_brends').slick({
         dots: false,
-        arrows: true
+        slidesToShow: 15,
+        arrows: true,
+        responsive: [{
+            breakpoint: 1890,
+            settings: {
+                slidesToShow: 13
+            }
+        }, {
+            breakpoint: 1590,
+            settings: {
+                slidesToShow: 13
+            }
+        }, {
+            breakpoint: 1400,
+            settings: {
+                slidesToShow: 9
+            }
+        }, {
+            breakpoint: 1140,
+            settings: {
+                slidesToShow: 6
+            }
+        }, {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 3 
+            }
+        }]
     })
 
 
@@ -19,42 +42,71 @@ $(document).ready(function() {
     //  this.id = carouselId;
 
 
-    $('.slider-for').slick({
-      slidesToShow: 1,
-      slidesToScroll: 1,
+    $('.slider-for, .slider-for1').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
         arrows: false,
         infinite: true,
-      fade: true,
-        asNavFor: '.slider-nav'
+        fade: true,
+        asNavFor: '.slider-nav, .slider-nav1'
     });
-    $('.slider-nav').slick({
+    $('.slider-nav, .slider-nav1').slick({
         slidesToShow: 5,
         slidesToScroll: 1,
-        asNavFor: '.slider-for',
-          dots: false,
-          arrows: true,
-          infinite: true,
-          centerMode: true
+        asNavFor: '.slider-for, .slider-for1',
+        dots: false,
+        arrows: true,
+        infinite: true,
+        centerMode: true
     });
 
-    //
 
-     $('.cart_slider').slick({
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      arrows: false,
-      fade: true,
-      asNavFor: '.cart_slider_list'
+    $('.cart_slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.cart_slider_list'
     });
     $('.cart_slider_list').slick({
-      slidesToShow: 8,
-      slidesToScroll: 1,
-      asNavFor: '.cart_slider',
-      dots: false,
-      arrows: true,
-      infinite: true,
-      focusOnSelect: true
+        slidesToShow: 8,
+        slidesToScroll: 1,
+        asNavFor: '.cart_slider',
+        dots: false,
+        arrows: true,
+        infinite: true,
+        focusOnSelect: true,
+        responsive: [{
+            breakpoint: 1760,
+            settings: {
+                slidesToScroll: 1,
+                infinite: false
+            }
+        }]
     });
+
+
+    $('.slider_tovar1, .slider_tovar2, .slider_tovar3').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        arrows: true,
+        infinite: true,
+        responsive: [{
+            breakpoint: 1760,
+            settings: {
+                slidesToShow: 3
+            }
+        }, {
+            breakpoint: 480,
+            settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 1
+            }
+        }]
+    });
+
 
 
     var w = $(window).width();
@@ -80,6 +132,10 @@ $(document).ready(function() {
             $('.prost').append($('.sidebar'));
             $('.prost').append($('.inner_header'));
             $('.prost').append($('.inner_tovar'));
+            $('.title_count').click(function() {
+                $('.top_lint').slideToggle()
+                $('.tavar_count').slideToggle(300)
+            });
         } else {
             $('.js_search').append($('.form_search'));
         }
@@ -114,24 +170,81 @@ $(document).ready(function() {
     });
 
     var select = function() {
-      $('.selectbox .text').click( function() {
-        $(this).next('.dropdown').slideToggle(300);
-      });
-      $('.dropdown1 li').click( function() {
-        var selectedText = $(this).text();
-        console.log(selectedText);
-        $('#text1').empty();
-        $('#text1').append(selectedText);
-      });
-      $('.dropdown2 li').click( function() {
-        var selectedText = $(this).text();
-        console.log(selectedText);
-        $('#text2').empty();
-        $('#text2').append(selectedText);
-      })
+        $('.selectbox .text').click(function() {
+            $(this).next('.dropdown').slideToggle(300);
+        });
+        $('.dropdown1 li').click(function() {
+            var selectedText = $(this).text();
+            console.log(selectedText);
+            $('#text1').empty();
+            $('#text1').append(selectedText);
+        });
+        $('.dropdown2 li').click(function() {
+            var selectedText = $(this).text();
+            console.log(selectedText);
+            $('#text2').empty();
+            $('#text2').append(selectedText);
+        })
     };
 
     select();
+
+    var select2 = function() {
+        $('.delivery .text').click(function() {
+            $(this).next('.dropdown').slideToggle(300);
+        });
+        $('.dropdown2 li').click(function() {
+            var selectedText = $(this).text();
+            console.log(selectedText);
+            $('#text3').empty();
+            $('#text3').append(selectedText);
+        });
+    };
+    select2();
+
+
+    var select = function() {
+        $('.selectbox .text').click(function() {
+            $(this).next('.dropdown').slideToggle(300);
+        });
+        $('.dropdown1 li').click(function() {
+            var selectedText = $(this).text();
+            console.log(selectedText);
+            $('#text4').empty();
+            $('#text4').append(selectedText);
+        });
+        $('.dropdown2 li').click(function() {
+            var selectedText = $(this).text();
+            console.log(selectedText);
+            $('#text5').empty();
+            $('#text5').append(selectedText);
+        })
+    };
+
+
+  // Cart
+
+    var map;
+    ymaps.ready(function(){
+        moscow_map = new ymaps.Map("map", {
+            center: [55.76, 37.64],
+            zoom: 10
+        });
+    });
+
+  
+
+    $('.slider_pows').slider({
+          range: true,
+          min: 0,
+          max: 15000,
+          values: [ 0, 15000 ],
+          step: 50,
+          slide: function( event, ui ) {
+            $("#amount").val(ui.values[ 0 ]);
+            $('#amount2').val(ui.values[ 1 ])
+          }
+    });
 
 
 
