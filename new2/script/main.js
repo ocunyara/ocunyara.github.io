@@ -1,4 +1,15 @@
 $(document).ready(function() {
+
+    function footer() {
+        if ( $("#page").hasClass("main_page") ) {
+            $('.sidebar').addClass('newsidebar');
+            console.log('11111111111');
+        } else { console.log('00000000'); }
+            
+    }
+    footer();
+
+
     $('.mob_slider_popular, .main_slider, .mob_slider_popular2').slick({
         dots: false,
         arrows: true
