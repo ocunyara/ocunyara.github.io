@@ -1251,7 +1251,7 @@ body .slider_tovar .product-container {
     margin-right: 35px;
     float: left;
     width: 155px;
-    height: 155px;
+    height: 142px;
     border: 0;
     background: transparent; }
     .list_artic .image_inner img {
@@ -3015,7 +3015,7 @@ footer {
       position: absolute;
       width: 13px;
       height: 13px;
-      top: 1px;
+      top: 0px;
       right: -26px;
       background: url(../image/exit.png);
       z-index: 0; }
@@ -3056,7 +3056,8 @@ footer {
     padding: 15px;
     border-top: 1px solid #dfedf4;
     padding-left: 15px;
-    width: 100%; }
+    width: 100%;
+    position: relative; }
     .basket_main .block_tovar .name {
       font-family: Roboto-Bold;
       font-size: 14px;
@@ -3101,15 +3102,6 @@ footer {
       font-family: Roboto-Bold;
       font-size: 16px;
       color: #333; }
-    .basket_main .didgit_number a {
-      position: absolute;
-      top: 1px;
-      right: -30px;
-      display: block;
-      width: 18px;
-      height: 18px;
-      background: url(../image/clear.png);
-      background-repeat: no-repeat; }
   .basket_main .seil_nom {
     overflow: hidden;
     border-top: 1px solid #ff0099;
@@ -3146,6 +3138,16 @@ footer {
 .payment_options {
   width: 46%;
   float: left; }
+
+.clearbtn {
+  position: absolute;
+  top: 1px;
+  right: -30px;
+  display: block;
+  width: 18px;
+  height: 18px;
+  background: url(../image/clear.png);
+  background-repeat: no-repeat; }
 
 .title_method {
   margin: 35px 0 30px;
@@ -3300,6 +3302,15 @@ footer {
   text-align: center;
   color: #fff; }
 
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus, .ui-button:hover, .ui-button:focus {
+  background: transparent;
+  border: 0;
+  box-shadow: 0 !important;
+  outline: 0; }
+
+.clearbtn2 {
+  display: none; }
+
 @media screen and (max-width: 1890px) {
   .wrapper {
     margin: 0 30px 0 30px;
@@ -3439,7 +3450,19 @@ footer {
   .list_articles li:nth-child(n+9) {
     display: none; }
   .block_filter .text {
-    width: 240px; } }
+    width: 240px; }
+  .methods_delivery, .payment_options {
+    width: 100%; }
+  .main_form .input_text {
+    width: 70%;
+    margin-right: 25px; }
+  .main_form .right_form {
+    padding-right: 0px; }
+  .main_form .left_form {
+    width: 100%; }
+  .main_form .right_form {
+    padding-right: 00px;
+    width: 100%; } }
 
 @media screen and (max-width: 1199px) {
   .header_phone {
@@ -3469,7 +3492,14 @@ footer {
   .articles_main {
     width: 54%; }
   .filter_slider {
-    width: 200px; } }
+    width: 200px; }
+  .basket {
+    width: 54%; }
+  .basket_main .block_tovar .block_product {
+    width: 58%; }
+  .basket_main .didgit_number span {
+    font-size: 14px;
+    margin-left: 20px; } }
 
 @media screen and (max-width: 1140px) {
   .inner_media {
@@ -3543,6 +3573,9 @@ footer {
   .text_page {
     width: 68%;
     float: right; }
+  .basket {
+    width: 68%;
+    float: right; }
   .right_sidebar {
     display: none; }
   .inner_media {
@@ -3583,7 +3616,9 @@ footer {
   .block_filter .filter {
     width: 47%; }
   .block_filter .text {
-    width: 100%; } }
+    width: 100%; }
+  .main_form {
+    padding-left: 10px; } }
 
 @media screen and (max-width: 768px) {
   .wrapper {
@@ -3856,11 +3891,75 @@ footer {
     display: block; }
   .block_filter .filter {
     width: 100%;
-    margin-left: 0px; } }
+    margin-left: 0px; }
+  .basket {
+    width: 100%; }
+  .basket_main .title_basket .second_block,
+  .basket_main .title_basket .forts_block {
+    display: none; }
+  .basket_main .block_tovar .block_product {
+    width: 100%; }
+  .basket_main .block_tovar .name {
+    margin-top: 15px; }
+  .basket_main .didgit_number {
+    margin-top: -20px;
+    margin-left: 55px;
+    margin-left: 0px; }
+  .basket_main .didgit_number span {
+    margin-left: 60px; }
+  .clearbtn2 {
+    display: block; }
+  .inner_delivery .ui-checkboxradio-radio-label .ui-icon-background {
+    width: 5px;
+    margin-top: 10px; }
+  .main_form .input_text {
+    width: 60%;
+    margin-right: 10px; }
+  .main_form label {
+    left: -10px;
+    font-size: 12px; }
+  .main_form .input_comments {
+    height: 100px; }
+  .main_sum span {
+    padding: 22px 10px 21px 0;
+    font-size: 14px; }
+  .main_sum p {
+    font-size: 10px; }
+  .didgit_number a {
+    display: none; }
+  .clearbtn2 {
+    display: block;
+    bottom: 14px;
+    top: 83%;
+    right: 20px; }
+  .basket_main {
+    border: 0; }
+  .basket_main .block_tovar {
+    padding: 15px 0 0 0; }
+  .btn_order {
+    width: 70%; }
+  .form_search {
+    width: 97%; }
+  .link_line {
+    width: 97%; }
+  body .sidebar {
+    width: 97%; } }
 
 @media screen and (max-width: 360px) {
   .slider_text {
-    padding: 0 30px; } }
+    padding: 0 30px; }
+  .mobil_links .line_dashed:after {
+    content: '';
+    display: block;
+    width: 99%; }
+  .wrapper {
+    margin: 0px 10px 0 0px !important; }
+  .form_search {
+    width: 100%;
+    margin: auto; }
+  body .mobil_links {
+    display: block;
+    padding-left: 10px; } }
 
 @media screen and (max-width: 450px) {
   .tavar_count .main_pagination {
@@ -3917,4 +4016,6 @@ footer {
     height: 100px; }
   .list_artic h4 {
     margin-top: 20px;
-    line-height: 26px; } }
+    line-height: 26px; }
+  .title_method {
+    margin: 20px 0 30px; } }
