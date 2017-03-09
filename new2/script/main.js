@@ -246,6 +246,11 @@ $(document).ready(function() {
           }
     });
 
+    //  spinner
+
+ var spinner = $( ".spinner" ).spinner();
+
+ $( ".input" ).checkboxradio();
 
 
 });
