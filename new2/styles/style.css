@@ -4171,6 +4171,7 @@ footer {
   .map_contact #map {
     height: 255px; }
   .contact_form form {
+    margin-right: 10px;
     width: 260px; }
   .contact_form .forn_text, .contact_form textarea {
     width: 100%; }
@@ -4198,7 +4199,11 @@ footer {
   .contact_form h2 {
     font-size: 19px; }
   .title_del_line {
-    border-bottom: 0; } }
+    border-bottom: 0; }
+  .right_adress .block_name {
+    width: 120px; }
+  .contact_form form p {
+    left: -270px; } }
 
 @media screen and (max-width: 360px) {
   .slider_text {
