@@ -832,6 +832,7 @@ body .slider_tovar .product-container {
     margin-bottom: 6px;
     line-height: 50px;
     text-align: left;
+    letter-spacing: -1px;
     border-radius: 4px;
     padding-left: 20px;
     color: #006699;
@@ -2835,6 +2836,11 @@ footer {
 .recommend_child {
   display: none; }
 
+.name_categori2 {
+  font-size: 18px !important;
+  padding-bottom: 5px !important;
+  line-height: 25px !important; }
+
 @media screen and (max-width: 1760px) {
   .additional_tovar {
     width: 90%; }
@@ -3265,6 +3271,8 @@ footer {
   .payment_options .one_radio .ui-button {
     padding: 25px 0px 25px 10px;
     border-bottom: 1px solid #dfedf4; }
+  .payment_options .one_radio .inner_delivery .ui-checkboxradio-radio-label .ui-icon-background {
+    margin-top: 0px !important; }
   .payment_options .ui-button {
     padding: 10px 0px 10px 10px;
     border-bottom: 0; }
@@ -3894,7 +3902,7 @@ footer {
     margin: 15px auto -10px !important;
     line-height: 0; }
   footer .bottom_line {
-    padding: 15px 0 30px !important; }
+    padding: 15px 10px 30px !important; }
   body footer {
     background: linear-gradient(#85c7e2 0%, #57aed3 100%);
     position: relative;
@@ -4016,6 +4024,7 @@ footer {
     width: 100%;
     margin-left: 0px; }
   .basket {
+    padding: 0;
     width: 100%; }
   .basket_main .title_basket .second_block,
   .basket_main .title_basket .forts_block {
@@ -4029,7 +4038,7 @@ footer {
     margin-left: 55px;
     margin-left: 0px; }
   .basket_main .didgit_number span {
-    margin-left: 60px; }
+    margin-left: 52px; }
   .clearbtn2 {
     display: block; }
   .inner_delivery .ui-checkboxradio-radio-label .ui-icon-background {
@@ -4141,7 +4150,8 @@ footer {
     display: block; }
   .contact {
     width: 100%;
-    float: none; }
+    float: none;
+    padding: 0; }
   .map_contact #map {
     height: 255px; }
   .contact_form form {
@@ -4154,7 +4164,23 @@ footer {
     width: 100%;
     margin: 30px 0px 25px 0px; }
   .block_filter:before {
-    display: none; } }
+    display: none; }
+  .ac-container label {
+    margin-bottom: -10px; }
+  .main_text img {
+    width: 100%;
+    margin: 10px 0; }
+  .basket_main .block_tovar .number {
+    margin-top: 15px;
+    margin-bottom: 15px; }
+  .inner_delivery .one_radio .ui-checkboxradio-radio-label .ui-icon-background {
+    margin-top: 0px !important; }
+  .contact_form {
+    padding: 0; }
+  .contact_form:before {
+    display: none; }
+  .contact_form h2 {
+    font-size: 19px; } }
 
 @media screen and (max-width: 360px) {
   .slider_text {
@@ -4173,7 +4199,21 @@ footer {
     margin: auto; }
   body .mobil_links {
     display: block;
-    padding-left: 10px; } }
+    padding-left: 10px; }
+  .slider_text .baner_title {
+    font-size: 21px; }
+  .line_dop {
+    width: 63%;
+    margin: 0 auto; }
+    .line_dop .left_block {
+      margin-bottom: 10px; }
+  .contact_form form p {
+    font-size: 10px; }
+  .contact_form form p {
+    left: -221px; }
+  .contact_form form {
+    width: 210px;
+    padding-right: 10px; } }
 
 @media screen and (max-width: 450px) {
   .tavar_count .main_pagination {
