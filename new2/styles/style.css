@@ -178,7 +178,7 @@ font-family: "Roboto-Light";
   src: local("☺"), url("../font/Roboto-Italic.ttf") format("truetype"); }
 
 .main-wrapper {
-  padding: 0 0 100px 0;
+  padding: 0 0 300px 0;
   min-width: 320px;
   position: relative;
   overflow: hidden;
@@ -1255,8 +1255,8 @@ body .slider_tovar .product-container {
     border: 0;
     background: transparent; }
     .list_artic .image_inner img {
-      width: 100%;
-      height: 100%; }
+      width: 94%;
+      height: 96%; }
   .list_artic h4 {
     font-family: Roboto-Regular;
     font-size: 14px;
@@ -3547,13 +3547,16 @@ footer {
   .main_form .right_form {
     padding-right: 00px;
     width: 100%; }
-  .count {
-    width: 100%; }
+  /*	.count {
+    	width: 100%;
+	}*/
   .delivery .count p {
     float: none;
     margin-top: 15px; }
   .delivery .filter {
-    margin-top: 40px; } }
+    margin-top: 40px; }
+  .list_artic .readall {
+    margin-top: 10px; } }
 
 @media screen and (max-width: 1199px) {
   .header_phone {
@@ -4058,11 +4061,11 @@ footer {
   .btn_order {
     width: 70%; }
   .form_search {
-    width: 97%; }
+    width: 100%; }
   .link_line {
-    width: 97%; }
+    width: 100%; }
   body .sidebar {
-    width: 97%; }
+    width: 100%; }
   .cart_tovar {
     width: 100%; }
   .bet_arder_one,
@@ -4153,7 +4156,10 @@ footer {
     display: block;
     width: 99%; }
   .wrapper {
-    margin: 0px 10px 0 4px !important; }
+    margin: 0;
+    padding: 0; }
+  .content {
+    padding: 0 10px; }
   .form_search {
     width: 100%;
     margin: auto; }
