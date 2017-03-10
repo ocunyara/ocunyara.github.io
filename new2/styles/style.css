@@ -737,7 +737,7 @@ body .slider_tovar .product-container {
       content: '';
       display: block;
       position: absolute;
-      top: 23px;
+      top: 26px;
       right: 20px;
       width: 8px;
       height: 5px;
@@ -3975,6 +3975,7 @@ footer {
     .title_count h1 {
       position: relative;
       top: 7px;
+      font-size: 20px;
       color: #fff; }
   .articles {
     padding: 0;
@@ -4146,7 +4147,14 @@ footer {
   .contact_form form {
     width: 260px; }
   .contact_form .forn_text, .contact_form textarea {
-    width: 100%; } }
+    width: 100%; }
+  .mobi_filter .title_filter {
+    font-size: 18px; }
+  .filter_slider {
+    width: 100%;
+    margin: 30px 0px 25px 0px; }
+  .block_filter:before {
+    display: none; } }
 
 @media screen and (max-width: 360px) {
   .slider_text {
