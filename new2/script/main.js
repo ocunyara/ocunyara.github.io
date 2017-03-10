@@ -157,11 +157,9 @@ $(document).ready(function() {
             $('.prost').append($('.sidebar'));
             $('.prost').append($('.inner_header'));
             $('.prost').append($('.inner_tovar'));
-            $('.title_count').click(function() {
-                $('.top_lint').slideToggle()
-                $('.tavar_count').slideToggle(300)
-            });
+            $('.title_count').addClass('clickbtn');
         } else {
+            $('.title_count').removeClass('clickbtn');
             $('.js_search').append($('.form_search'));
         }
     }
@@ -174,6 +172,10 @@ $(document).ready(function() {
             $('.main_menu ul').slideToggle(300);
         });
     };
+
+    $('.clickbtn').click(function() {
+        $('.tavar_count').slideToggle(300)
+    });
     toggle_btn();
 
 
@@ -200,15 +202,15 @@ $(document).ready(function() {
         });
         $('.dropdown1 li').click(function() {
             var selectedText = $(this).text();
-            console.log(selectedText);
             $('#text1').empty();
             $('#text1').append(selectedText);
+            $('.dropdown').hide(300);
         });
         $('.dropdown2 li').click(function() {
             var selectedText = $(this).text();
-            console.log(selectedText);
             $('#text2').empty();
             $('#text2').append(selectedText);
+            $('.dropdown').hide(300);
         })
     };
 
@@ -220,31 +222,30 @@ $(document).ready(function() {
         });
         $('.dropdown2 li').click(function() {
             var selectedText = $(this).text();
-            console.log(selectedText);
             $('#text3').empty();
             $('#text3').append(selectedText);
+            $('.dropdown').hide(300);
         });
     };
     select2();
 
 
-    var select = function() {
-        $('.selectbox .text').click(function() {
-            $(this).next('.dropdown').slideToggle(300);
-        });
-        $('.dropdown1 li').click(function() {
-            var selectedText = $(this).text();
-            console.log(selectedText);
-            $('#text4').empty();
-            $('#text4').append(selectedText);
-        });
+    var select3 = function() {
         $('.dropdown2 li').click(function() {
             var selectedText = $(this).text();
-            console.log(selectedText);
+            $('#text4').empty();
+            $('#text4').append(selectedText);
+            $('.dropdown').hide(300);
+        });
+        $('.dropdown3 li').click(function() {
+            var selectedText = $(this).text();
             $('#text5').empty();
             $('#text5').append(selectedText);
-        })
+            $('.dropdown').hide(300);
+        });
     };
+
+    select3();
 
 
   // Cart

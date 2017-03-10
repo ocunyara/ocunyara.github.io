@@ -3234,10 +3234,10 @@ footer {
   .inner_delivery .ui-button.ui-state-active:hover {
     background: transparent;
     border: 0;
-    box-shadow: 0; }
+    box-shadow: none !important; }
   .inner_delivery .ui-checkboxradio-label .ui-icon-background {
     margin-right: 15px;
-    box-shadow: 0; }
+    box-shadow: none !important; }
   .inner_delivery .ui-checkboxradio .ui-icon-background {
     width: 19px;
     height: 19px;
@@ -3374,6 +3374,19 @@ footer {
 
 .clearbtn2 {
   display: none; }
+
+.dropdown li {
+  font-family: Roboto-Regular;
+  font-size: 13px;
+  color: #333;
+  line-height: 23px;
+  padding-left: 15px;
+  background: #fff;
+  border-bottom: 1px dashed #8bcae6; }
+
+.selectbox2 {
+  width: 200px !important;
+  margin: 0 auto; }
 
 @media screen and (max-width: 1890px) {
   .wrapper {
@@ -3737,12 +3750,15 @@ footer {
     font-size: 12px; }
   .filter_slider {
     width: 95%;
-    margin: 30px 25px 25px 15px; }
+    margin: 30px 25px 25px 15px;
+    z-index: 50; }
   .search_btn {
     float: none;
     margin: auto; }
   .selectbox {
-    width: 100%; }
+    width: 100%;
+    position: relative;
+    z-index: 50 !important; }
   .block_filter .filter {
     width: 47%; }
   .block_filter .text {
@@ -3967,11 +3983,11 @@ footer {
     border-bottom: 0;
     background: linear-gradient(#ff62ba 0%, #ff2ea2 100%);
     position: relative; }
-    .title_count :after {
+    .title_count:after {
       content: '';
       display: block;
       position: absolute;
-      top: 14px;
+      top: 21px;
       right: 20px;
       width: 8px;
       height: 5px;
@@ -4180,7 +4196,9 @@ footer {
   .contact_form:before {
     display: none; }
   .contact_form h2 {
-    font-size: 19px; } }
+    font-size: 19px; }
+  .title_del_line {
+    border-bottom: 0; } }
 
 @media screen and (max-width: 360px) {
   .slider_text {
