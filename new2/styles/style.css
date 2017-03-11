@@ -3249,9 +3249,9 @@ footer {
     background: #ff47ad; }
   .inner_delivery .methods_delivery .ui-state-active,
   .inner_delivery .ui-checkboxradio-radio-label.ui-checkboxradio-checked .ui-icon, .inner_delivery .ui-checkboxradio-radio-label.ui-checkboxradio-checked:hover .ui-icon {
-    width: 20px;
+    width: 17px;
     border: 5px solid #fff;
-    height: 20px; }
+    height: 17px; }
   .inner_delivery .ui-button {
     font-family: Roboto-Bold !important;
     font-size: 14px !important;
@@ -3387,6 +3387,84 @@ footer {
 .selectbox2 {
   width: 200px !important;
   margin: 0 auto; }
+
+.dispatch {
+  width: 380px;
+  margin: 0 auto;
+  background: url(../image/zxc.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  padding-bottom: 225px; }
+
+.dispatch_inner {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 15px; }
+
+.title_dispatch {
+  margin-top: 11px;
+  margin-bottom: 335px; }
+  .title_dispatch h1 {
+    line-height: 34px;
+    font-family: ArialRoundedMTProCyr-Bold;
+    font-size: 24px;
+    color: #006699;
+    text-transform: uppercase; }
+  .title_dispatch p {
+    margin-top: 7px;
+    line-height: 23px;
+    font-family: Roboto-Regular;
+    font-size: 16px;
+    color: #333; }
+
+.title_pit {
+  text-align: center;
+  font-family: ArialRoundedMTProCyr-Bold;
+  font-size: 23px;
+  color: #ff2ea2;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  text-transform: uppercase; }
+
+.block_dispatch {
+  width: 250px;
+  padding: 30px;
+  margin: 0 auto;
+  margin-top: 20px;
+  text-align: center;
+  background: #fff;
+  border-radius: 10px;
+  border: 1px solid #f2f2f2; }
+  .block_dispatch .name {
+    margin-top: 15px;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: Roboto-Bold;
+    color: #333333; }
+  .block_dispatch p {
+    margin-top: 15px;
+    font-family: Roboto-Regular;
+    font-size: 16px;
+    color: #ff0099; }
+
+.btn_dispatch {
+  display: block;
+  width: 180px;
+  height: 40px;
+  font-family: Roboto-Regular;
+  font-size: 14px;
+  background: linear-gradient(#85c7e2 0%, #57aed3 100%);
+  text-transform: uppercase;
+  border-radius: 50px;
+  margin: 25px auto;
+  padding-top: 13px;
+  text-align: center;
+  color: #fff; }
+
+.seil_img {
+  width: 63%;
+  font-size: 27px;
+  line-height: 32px; }
 
 @media screen and (max-width: 1890px) {
   .wrapper {
@@ -4013,6 +4091,7 @@ footer {
   .articles_main .contents {
     padding: 0; }
   .title_art {
+    margin-top: 10px;
     padding-top: 15px; }
   .btn_before {
     top: 0px;
@@ -4203,7 +4282,32 @@ footer {
   .right_adress .block_name {
     width: 120px; }
   .contact_form form p {
-    left: -270px; } }
+    left: -270px; }
+  .list_prams .items:hover {
+    box-shadow: none; }
+  .title_article h1 {
+    margin-top: 14px; }
+  .mobi_filter .title_filter {
+    padding-top: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 49px; }
+  .contact .title_contact h1 {
+    display: table;
+    margin: 16px auto 0;
+    padding-top: 10px; }
+  .title_article h1 {
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px;
+    display: table;
+    padding-bottom: 1px; }
+  .left_adress .block_name {
+    width: 155px; }
+  .left_adress .name {
+    font-size: 12px; }
+  .left_adress span {
+    font-size: 12px; } }
 
 @media screen and (max-width: 360px) {
   .slider_text {
@@ -4276,7 +4380,7 @@ footer {
     .list_prams .items .slider-nav, .list_prams .items:after {
       display: none; }
   .list_prams .item_action:after {
-    top: 84px;
+    top: 90px;
     right: 0px; }
   .list_prams .img_inner {
     display: block;

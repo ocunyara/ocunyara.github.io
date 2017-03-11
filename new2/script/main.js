@@ -278,5 +278,7 @@ $(document).ready(function() {
 
  $( ".input" ).checkboxradio();
 
+ $('.ui-draggable-handle').draggable();
+
 
 });
