@@ -195,6 +195,9 @@ $(document).ready(function() {
     $('.title_filter').click(function() {
         $(this).next('.filter_table').slideToggle(300);
     });
+    $('.toggle_article').click(function() {
+        $(this).next('.dropdavt').slideToggle(300);
+    });
 
     var select = function() {
         $('.selectbox .text').click(function() {

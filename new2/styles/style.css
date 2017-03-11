@@ -3389,7 +3389,7 @@ footer {
   margin: 0 auto; }
 
 .dispatch {
-  width: 380px;
+  width: 580px;
   margin: 0 auto;
   background: url(../image/zxc.jpg);
   background-repeat: no-repeat;
@@ -3465,6 +3465,60 @@ footer {
   width: 63%;
   font-size: 27px;
   line-height: 32px; }
+
+.toggle_article {
+  margin-top: 15px;
+  line-height: 43px;
+  font-family: Roboto-Light;
+  font-size: 16px;
+  color: #999999;
+  text-align: center;
+  background: #cbebf3;
+  position: relative; }
+  .toggle_article:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 12px;
+    height: 12px;
+    background: url(../image/cvad.png); }
+  .toggle_article:before {
+    content: '☰';
+    display: block;
+    position: absolute;
+    width: 23px;
+    height: 21px;
+    top: 0;
+    right: 45px;
+    font-size: 33px;
+    color: #fff;
+    display: block;
+    z-index: 100px; }
+
+.toggle_block {
+  display: none; }
+  .toggle_block li {
+    background: #fff;
+    border-bottom: 1px dashed #4b99bb; }
+  .toggle_block a {
+    line-height: 25px;
+    padding: 12px 15px;
+    display: inline-block;
+    width: 100%;
+    font-family: Roboto-light;
+    font-size: 14px;
+    color: #000; }
+  .toggle_block .dropdavt {
+    display: none; }
+
+.toggle_article2 {
+  background: #f0f0f0; }
+  .toggle_article2:after {
+    display: none; }
+  .toggle_article2:before {
+    color: #b6b6b6; }
 
 @media screen and (max-width: 1890px) {
   .wrapper {
@@ -4307,7 +4361,13 @@ footer {
   .left_adress .name {
     font-size: 12px; }
   .left_adress span {
-    font-size: 12px; } }
+    font-size: 12px; }
+  .right_adress .dey {
+    font-size: 12px; }
+  .title_tovar h1 {
+    margin-top: 10px; }
+  .toggle_block {
+    display: block; } }
 
 @media screen and (max-width: 360px) {
   .slider_text {
