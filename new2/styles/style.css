@@ -3391,15 +3391,18 @@ footer {
 .dispatch {
   width: 580px;
   margin: 0 auto;
-  background: url(../image/zxc.jpg);
+  background: url(../image/zxc_max.jpg);
   background-repeat: no-repeat;
   background-position: top;
-  padding-bottom: 225px; }
+  padding-bottom: 100px; }
 
 .dispatch_inner {
   box-sizing: border-box;
   width: 100%;
   padding: 0 15px; }
+
+.logo_dispatch img {
+  width: 65%; }
 
 .title_dispatch {
   margin-top: 11px;
@@ -3417,18 +3420,33 @@ footer {
     font-size: 16px;
     color: #333; }
 
+/*.title_pit_element {
+	position: relative;*/
+/*	&:after {
+		content: '';
+		display: block;
+		position: absolute;
+		width: 300px;
+		height: 200px;
+		top: 0;
+		right: -10px;
+		background: url(../image/baby_1.jpg);
+		background-repeat: no-repeat;
+	}
+}*/
 .title_pit {
   text-align: center;
   font-family: ArialRoundedMTProCyr-Bold;
-  font-size: 23px;
+  font-size: 29px;
   color: #ff2ea2;
   margin-bottom: 30px;
   margin-top: 20px;
   text-transform: uppercase; }
 
 .block_dispatch {
+  float: left;
   width: 250px;
-  padding: 30px;
+  padding: 20px 15px;
   margin: 0 auto;
   margin-top: 20px;
   text-align: center;
@@ -3447,6 +3465,9 @@ footer {
     font-size: 16px;
     color: #ff0099; }
 
+.first_dispatch {
+  margin-right: 50px; }
+
 .btn_dispatch {
   display: block;
   width: 180px;
@@ -3462,9 +3483,33 @@ footer {
   color: #fff; }
 
 .seil_img {
-  width: 63%;
+  width: 100%;
   font-size: 27px;
   line-height: 32px; }
+
+.inner_img4 {
+  width: 220px;
+  height: 240px; }
+
+@media screen and (max-width: 580px) {
+  .dispatch {
+    width: 100%;
+    background: url(../image/zxc.jpg); }
+  .first_dispatch {
+    margin-right: 0px; }
+  .block_dispatch {
+    float: none;
+    margin: 10px auto 20px; }
+  .dispatch {
+    background-size: 100%;
+    background-repeat: no-repeat; }
+  .title_pit {
+    font-size: 20px; }
+  .logo_dispatch {
+    margin: 0 auto;
+    width: 90%; }
+    .logo_dispatch img {
+      width: 100%; } }
 
 .toggle_article {
   margin-top: 15px;
