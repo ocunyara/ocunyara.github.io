@@ -54,7 +54,7 @@ AOS.init({
   duration: 1200,
 })
 
-$('.slider_room').slick({
+$('.slider_rooms,.slider_roomes').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
   autoplay: true,
@@ -77,6 +77,9 @@ $('.slider_gellery1, .slider_gellery2, .slider_gellery3, .slider_room').slick({
   arrows: true,
   dots: true
 });
+    $('#nav-icon3').click( function() {
+        $(this).next('.menu').slideToggle(300)
+    });
 
 
    function initialize() {
@@ -107,4 +110,9 @@ $('.slider_gellery1, .slider_gellery2, .slider_gellery3, .slider_room').slick({
     google.maps.event.addDomListener(window, 'load', initialize);
 
 
+
+
+    $('.toggle_article').click(function() {
+        $(this).next('.dropdavt').slideToggle(300);
+    });
 });
