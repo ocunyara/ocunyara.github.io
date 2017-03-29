@@ -304,7 +304,7 @@ font-family: "Roboto-Light";
     text-transform: uppercase;
     bottom: 30px;
     left: 30px; }
-  .advantages_item:hover .inner_item {
+  .advantages_item:hover .inner_item, .advantages_item:focus .inner_item, .advantages_item:active .inner_item {
     opacity: 1; }
 
 .inner_item {
