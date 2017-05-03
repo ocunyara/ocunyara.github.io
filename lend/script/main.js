@@ -4,9 +4,16 @@ $(document).ready(function() {
     $(".main_menu").on("click", "a", function(event) {
         event.preventDefault();
         var id = $(this).attr('href'),
-            top = $(id).offset().top - 60;
+            top = $(id).offset().top - 100;
         $('body,html').animate({ scrollTop: top }, 1000);
     });
+    $("section").on("click", "a", function(event) {
+        event.preventDefault();
+        var id = $(this).attr('href'),
+            top = $(id).offset().top - 150;
+        $('body,html').animate({ scrollTop: top }, 1000);
+    });
+
 
     var nav = $('.top_line');
     var height = $('.top_line').height();
