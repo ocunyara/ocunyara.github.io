@@ -28,5 +28,10 @@ $(document).ready(function() {
         }
     });
 
+
+$('.input_hide').click( function(e) {
+  $('.inner_calc').show();
+  $('.inner_calc2').hide();  
+});
     $(".chzn-select").chosen()
 });

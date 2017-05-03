@@ -34,7 +34,7 @@
                             <div class="main_menu">
                                 <ul class="nav navbar-nav">
                                     <li><a href="#top1">ГАРАНТии</a></li>
-                                    <li><a href="#top2">Преимуществ</a></li>
+                                    <li><a href="#top2">Преимущества</a></li>
                                     <li><a href="#top3">Как это работает?</a></li>
                                     <li><a href="#top4">Отзывы</a></li>
                                     <div class="phone">+7(495)-668-13-54</div>
@@ -48,8 +48,19 @@
                     <h1>Студенческий сервис от лучших авторов <br> Без посредников!</h1>
                 </div>
                 <div class="col-md-8">
+                    <div class="inner_calc">
+                        <div class="calc-online">
+                            <div class="calc_title" id="sum">Продолжить оформление заказа</div>
+                            <h2 class="h2">Для продолжения оформления заказа <br> Введите ваш пароль</h2>
+                            <input type="text" class="input_submi" placeholder="Введите пароль">
+                            <p>Или перейдите в личный кабинет по ссылки <br>
+ высланной на ваш eмаил  <span>sample@email.com</span></p>
+                            <a href="#" class="btn_form">Оформить заказ</a>
+                        </div>
+                    </div>
+                    <div class="inner_calc2">
                     <div class="calc-online">
-                        <div class="calc_title" id="sum">Расчет стоимости онлайн</div>
+                         <div class="calc_title" id="sum">Расчет стоимости онлайн</div>
                         <form>
                             <p class="link_calc">Для расчета стоимости введите свой e-mail </p>
                             <div class="row">
@@ -85,7 +96,7 @@
                                     <div class="qty">
                                         <p class="p1">Количество страниц</p>
                                         <div class="minus"><img src="./image/minus.png" alt="minus" /></div>
-                                        <input type="number" class="quantity" name="quantity" value="100" />
+                                        <input type="number" class="quantity" readonly  name="quantity" value="100" />
                                         <div class="plus"><img src="./image/plus.png" alt="plus" /></div>
                                     </div>
                                 </div>
@@ -104,8 +115,9 @@
                             <div class="promo">
                                 <input type="text" class="promos" name="promo" placeholder="Введите промокод чтобы получить скидку" />
                             </div>
-                            <input type="submit" class="input_submit" value="Оформи заявку сейчас" />
-                        </form>
+                            <div type="submit" class="input_submit input_hide">Оформи заявку сейчас</div>
+                        </form> 
+                    </div>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -331,7 +343,7 @@
                     </li>
                     <li>
                         <p>Аргументов <br> достаточно?</p>
-                        <p class="true">Да, вполне</p>
+                        <a href="#sum" class="true">Да, вполне</a>
                     </li>
                 </ul>
             </div>
